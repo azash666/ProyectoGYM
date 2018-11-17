@@ -1,0 +1,342 @@
+fileFormatVersion: 2
+guid: 86429c7598de9124b8e272ae97e7349c
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: AMARILLO MATE
+    100002: BEIGE MATE
+    100004: Birth 01
+    100006: Birth 02
+    100008: Birth 03
+    100010: Birth 04
+    100012: BLANCO MATE
+    100014: Camera01
+    100016: Camera01.Target
+    100018: Camera02
+    100020: Camera02.Target
+    100022: CARAVISTA
+    100024: Collision 01
+    100026: Collision 02
+    100028: Collision 03
+    100030: Collision 04
+    100032: Collision 05
+    100034: Collision 06
+    100036: Collision 07
+    100038: Collision 08
+    100040: Compass01
+    100042: Compass02
+    100044: Daylight 01
+    100046: Daylight 02
+    100048: Display 01
+    100050: Display 02
+    100052: Display 03
+    100054: Display 04
+    100056: Display 05
+    100058: Display 06
+    100060: Display 07
+    100062: Display 08
+    100064: Display 09
+    100066: Display 10
+    100068: Display 11
+    100070: Display 12
+    100072: //RootNode
+    100074: Event 01
+    100076: Event 02
+    100078: Event 03
+    100080: Event 04
+    100082: Event 05
+    100084: Event 06
+    100086: Event 07
+    100088: Event 08
+    100090: Event 09
+    100092: Event 10
+    100094: Event 11
+    100096: Event 12
+    100098: Force 01
+    100100: Force 02
+    100102: Force 03
+    100104: Force 04
+    100106: Force 05
+    100108: Force 06
+    100110: Force 07
+    100112: Force 08
+    100114: MORADO
+    100116: MORADOUJI
+    100118: Particle View 01
+    100120: Particle View 02
+    100122: Particle View 03
+    100124: Particle View 04
+    100126: PAVES
+    100128: PF Arrow01
+    100130: PF Arrow02
+    100132: PF Arrow03
+    100134: PF Arrow04
+    100136: Position Icon 01
+    100138: Position Icon 02
+    100140: Position Icon 03
+    100142: Position Icon 04
+    100144: Render 01
+    100146: Render 02
+    100148: Render 03
+    100150: Render 04
+    100152: ROJO MATE
+    100154: Rotation 01
+    100156: Rotation 02
+    100158: Rotation 03
+    100160: Rotation 04
+    100162: Scale 01
+    100164: Scale 02
+    100166: Scale 03
+    100168: Scale 04
+    100170: Scale 05
+    100172: Scale 06
+    100174: Scale 07
+    100176: Scale 08
+    100178: Shape 01
+    100180: Shape 02
+    100182: Shape 03
+    100184: Shape 04
+    100186: Sky02
+    100188: Sky03
+    100190: Speed 01
+    100192: Speed 02
+    100194: Speed 03
+    100196: Speed 04
+    100198: Speed 05
+    100200: Speed 06
+    100202: Speed 07
+    100204: Speed 08
+    100206: Split Amount 01
+    100208: Split Amount 02
+    100210: Split Amount 03
+    100212: Split Amount 04
+    100214: SUELO TERRAZA
+    100216: Sun01
+    100218: Sun02
+    100220: VENHO_TI
+    100222: VENHOA_TI
+    100224: VENHOB_TI
+    100226: VENHOC_TI
+    100228: VENHOD_TI
+    100230: VENHOE_TI
+    100232: VERDE UJI
+    400000: AMARILLO MATE
+    400002: BEIGE MATE
+    400004: Birth 01
+    400006: Birth 02
+    400008: Birth 03
+    400010: Birth 04
+    400012: BLANCO MATE
+    400014: Camera01
+    400016: Camera01.Target
+    400018: Camera02
+    400020: Camera02.Target
+    400022: CARAVISTA
+    400024: Collision 01
+    400026: Collision 02
+    400028: Collision 03
+    400030: Collision 04
+    400032: Collision 05
+    400034: Collision 06
+    400036: Collision 07
+    400038: Collision 08
+    400040: Compass01
+    400042: Compass02
+    400044: Daylight 01
+    400046: Daylight 02
+    400048: Display 01
+    400050: Display 02
+    400052: Display 03
+    400054: Display 04
+    400056: Display 05
+    400058: Display 06
+    400060: Display 07
+    400062: Display 08
+    400064: Display 09
+    400066: Display 10
+    400068: Display 11
+    400070: Display 12
+    400072: //RootNode
+    400074: Event 01
+    400076: Event 02
+    400078: Event 03
+    400080: Event 04
+    400082: Event 05
+    400084: Event 06
+    400086: Event 07
+    400088: Event 08
+    400090: Event 09
+    400092: Event 10
+    400094: Event 11
+    400096: Event 12
+    400098: Force 01
+    400100: Force 02
+    400102: Force 03
+    400104: Force 04
+    400106: Force 05
+    400108: Force 06
+    400110: Force 07
+    400112: Force 08
+    400114: MORADO
+    400116: MORADOUJI
+    400118: Particle View 01
+    400120: Particle View 02
+    400122: Particle View 03
+    400124: Particle View 04
+    400126: PAVES
+    400128: PF Arrow01
+    400130: PF Arrow02
+    400132: PF Arrow03
+    400134: PF Arrow04
+    400136: Position Icon 01
+    400138: Position Icon 02
+    400140: Position Icon 03
+    400142: Position Icon 04
+    400144: Render 01
+    400146: Render 02
+    400148: Render 03
+    400150: Render 04
+    400152: ROJO MATE
+    400154: Rotation 01
+    400156: Rotation 02
+    400158: Rotation 03
+    400160: Rotation 04
+    400162: Scale 01
+    400164: Scale 02
+    400166: Scale 03
+    400168: Scale 04
+    400170: Scale 05
+    400172: Scale 06
+    400174: Scale 07
+    400176: Scale 08
+    400178: Shape 01
+    400180: Shape 02
+    400182: Shape 03
+    400184: Shape 04
+    400186: Sky02
+    400188: Sky03
+    400190: Speed 01
+    400192: Speed 02
+    400194: Speed 03
+    400196: Speed 04
+    400198: Speed 05
+    400200: Speed 06
+    400202: Speed 07
+    400204: Speed 08
+    400206: Split Amount 01
+    400208: Split Amount 02
+    400210: Split Amount 03
+    400212: Split Amount 04
+    400214: SUELO TERRAZA
+    400216: Sun01
+    400218: Sun02
+    400220: VENHO_TI
+    400222: VENHOA_TI
+    400224: VENHOB_TI
+    400226: VENHOC_TI
+    400228: VENHOD_TI
+    400230: VENHOE_TI
+    400232: VERDE UJI
+    2300000: AMARILLO MATE
+    2300002: BEIGE MATE
+    2300004: BLANCO MATE
+    2300006: CARAVISTA
+    2300008: MORADO
+    2300010: MORADOUJI
+    2300012: PAVES
+    2300014: ROJO MATE
+    2300016: SUELO TERRAZA
+    2300018: VENHO_TI
+    2300020: VENHOA_TI
+    2300022: VENHOB_TI
+    2300024: VENHOC_TI
+    2300026: VENHOD_TI
+    2300028: VENHOE_TI
+    2300030: VERDE UJI
+    3300000: AMARILLO MATE
+    3300002: BEIGE MATE
+    3300004: BLANCO MATE
+    3300006: CARAVISTA
+    3300008: MORADO
+    3300010: MORADOUJI
+    3300012: PAVES
+    3300014: ROJO MATE
+    3300016: SUELO TERRAZA
+    3300018: VENHO_TI
+    3300020: VENHOA_TI
+    3300022: VENHOB_TI
+    3300024: VENHOC_TI
+    3300026: VENHOD_TI
+    3300028: VENHOE_TI
+    3300030: VERDE UJI
+    4300000: VENHO_TI
+    4300002: VENHOA_TI
+    4300004: VENHOB_TI
+    4300006: VENHOC_TI
+    4300008: VENHOD_TI
+    4300010: VENHOE_TI
+    4300012: PAVES
+    4300014: MORADOUJI
+    4300016: BLANCO MATE
+    4300018: AMARILLO MATE
+    4300020: MORADO
+    4300022: ROJO MATE
+    4300024: VERDE UJI
+    4300026: SUELO TERRAZA
+    4300028: BEIGE MATE
+    4300030: CARAVISTA
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 

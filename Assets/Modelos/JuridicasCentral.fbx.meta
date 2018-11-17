@@ -1,0 +1,127 @@
+fileFormatVersion: 2
+guid: c67c8585fe244b84d80530753774967a
+timeCreated: 1495615523
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BLANCO MATE
+    100002: CARAVISTA ROJIZA
+    100004: CESPED
+    100006: GRIS CLARO MATE
+    100008: //RootNode
+    100010: PAVIMENTO
+    100012: PUECE_JURIDICAS
+    100014: VEN_JURIDICAS
+    100016: VENHOA_JURIDICAS
+    100018: VENHORIZONTAL_JURIDICAS
+    100020: VENLARGA_JURIDICAS
+    400000: BLANCO MATE
+    400002: CARAVISTA ROJIZA
+    400004: CESPED
+    400006: GRIS CLARO MATE
+    400008: //RootNode
+    400010: PAVIMENTO
+    400012: PUECE_JURIDICAS
+    400014: VEN_JURIDICAS
+    400016: VENHOA_JURIDICAS
+    400018: VENHORIZONTAL_JURIDICAS
+    400020: VENLARGA_JURIDICAS
+    2300000: BLANCO MATE
+    2300002: CARAVISTA ROJIZA
+    2300004: CESPED
+    2300006: GRIS CLARO MATE
+    2300008: PAVIMENTO
+    2300010: PUECE_JURIDICAS
+    2300012: VEN_JURIDICAS
+    2300014: VENHOA_JURIDICAS
+    2300016: VENHORIZONTAL_JURIDICAS
+    2300018: VENLARGA_JURIDICAS
+    3300000: BLANCO MATE
+    3300002: CARAVISTA ROJIZA
+    3300004: CESPED
+    3300006: GRIS CLARO MATE
+    3300008: PAVIMENTO
+    3300010: PUECE_JURIDICAS
+    3300012: VEN_JURIDICAS
+    3300014: VENHOA_JURIDICAS
+    3300016: VENHORIZONTAL_JURIDICAS
+    3300018: VENLARGA_JURIDICAS
+    4300000: CESPED
+    4300002: VEN_JURIDICAS
+    4300004: VENLARGA_JURIDICAS
+    4300006: VENHOA_JURIDICAS
+    4300008: GRIS CLARO MATE
+    4300010: VENHORIZONTAL_JURIDICAS
+    4300012: PAVIMENTO
+    4300014: PUECE_JURIDICAS
+    4300016: CARAVISTA ROJIZA
+    4300018: BLANCO MATE
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

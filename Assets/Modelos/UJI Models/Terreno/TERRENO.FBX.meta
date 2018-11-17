@@ -1,0 +1,222 @@
+fileFormatVersion: 2
+guid: a4189dcc5e677d041b966ebbcd0a84c3
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: AGUA
+    100002: Birth 01
+    100004: Birth 02
+    100006: BLANCO MATE
+    100008: Camera01
+    100010: Camera01.Target
+    100012: CARRETERA
+    100014: CESPED
+    100016: Collision 01
+    100018: Collision 02
+    100020: Collision 03
+    100022: Collision 04
+    100024: Compass01
+    100026: Daylight 01
+    100028: Display 01
+    100030: Display 02
+    100032: Display 03
+    100034: Display 04
+    100036: Display 05
+    100038: Display 06
+    100040: Event 01
+    100042: Event 02
+    100044: Event 03
+    100046: Event 04
+    100048: Event 05
+    100050: Event 06
+    100052: Force 01
+    100054: Force 02
+    100056: Force 03
+    100058: Force 04
+    100060: GRANATE MATE
+    100062: GRIS CLARO MATE
+    100064: GRIS MATE
+    100066: MORADO
+    100068: Particle View 01
+    100070: Particle View 02
+    100072: PAVIMENTO ROJIZO
+    100074: PF Arrow01
+    100076: PF Arrow02
+    100078: Position Icon 01
+    100080: Position Icon 02
+    100082: REJA MARQUESINA
+    100084: Render 01
+    100086: Render 02
+    100088: Rotation 01
+    100090: Rotation 02
+    100092: Scale 01
+    100094: Scale 02
+    100096: Scale 03
+    100098: Scale 04
+    100100: Shape 01
+    100102: Shape 02
+    100104: Sky02
+    100106: Speed 01
+    100108: Speed 02
+    100110: Speed 03
+    100112: Speed 04
+    100114: Split Amount 01
+    100116: Split Amount 02
+    100118: Sun01
+    100120: //RootNode
+    100122: TIERRA
+    100124: VIDRIO
+    400000: AGUA
+    400002: Birth 01
+    400004: Birth 02
+    400006: BLANCO MATE
+    400008: Camera01
+    400010: Camera01.Target
+    400012: CARRETERA
+    400014: CESPED
+    400016: Collision 01
+    400018: Collision 02
+    400020: Collision 03
+    400022: Collision 04
+    400024: Compass01
+    400026: Daylight 01
+    400028: Display 01
+    400030: Display 02
+    400032: Display 03
+    400034: Display 04
+    400036: Display 05
+    400038: Display 06
+    400040: Event 01
+    400042: Event 02
+    400044: Event 03
+    400046: Event 04
+    400048: Event 05
+    400050: Event 06
+    400052: Force 01
+    400054: Force 02
+    400056: Force 03
+    400058: Force 04
+    400060: GRANATE MATE
+    400062: GRIS CLARO MATE
+    400064: GRIS MATE
+    400066: MORADO
+    400068: Particle View 01
+    400070: Particle View 02
+    400072: PAVIMENTO ROJIZO
+    400074: PF Arrow01
+    400076: PF Arrow02
+    400078: Position Icon 01
+    400080: Position Icon 02
+    400082: REJA MARQUESINA
+    400084: Render 01
+    400086: Render 02
+    400088: Rotation 01
+    400090: Rotation 02
+    400092: Scale 01
+    400094: Scale 02
+    400096: Scale 03
+    400098: Scale 04
+    400100: Shape 01
+    400102: Shape 02
+    400104: Sky02
+    400106: Speed 01
+    400108: Speed 02
+    400110: Speed 03
+    400112: Speed 04
+    400114: Split Amount 01
+    400116: Split Amount 02
+    400118: Sun01
+    400120: //RootNode
+    400122: TIERRA
+    400124: VIDRIO
+    2300000: AGUA
+    2300002: BLANCO MATE
+    2300004: CARRETERA
+    2300006: CESPED
+    2300008: GRANATE MATE
+    2300010: GRIS CLARO MATE
+    2300012: GRIS MATE
+    2300014: MORADO
+    2300016: PAVIMENTO ROJIZO
+    2300018: REJA MARQUESINA
+    2300020: TIERRA
+    2300022: VIDRIO
+    3300000: AGUA
+    3300002: BLANCO MATE
+    3300004: CARRETERA
+    3300006: CESPED
+    3300008: GRANATE MATE
+    3300010: GRIS CLARO MATE
+    3300012: GRIS MATE
+    3300014: MORADO
+    3300016: PAVIMENTO ROJIZO
+    3300018: REJA MARQUESINA
+    3300020: TIERRA
+    3300022: VIDRIO
+    4300000: BLANCO MATE
+    4300002: GRANATE MATE
+    4300004: CARRETERA
+    4300006: CESPED
+    4300008: AGUA
+    4300010: GRIS CLARO MATE
+    4300012: MORADO
+    4300014: GRIS MATE
+    4300016: VIDRIO
+    4300018: REJA MARQUESINA
+    4300020: TIERRA
+    4300022: PAVIMENTO ROJIZO
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 

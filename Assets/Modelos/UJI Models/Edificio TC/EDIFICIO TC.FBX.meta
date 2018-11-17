@@ -1,0 +1,238 @@
+fileFormatVersion: 2
+guid: b30c7703f9744294986159858e243f07
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: AMARILLO MATE
+    100002: Birth 01
+    100004: Birth 02
+    100006: BLANCO MATE
+    100008: Camera01
+    100010: Camera01.Target
+    100012: Camera02
+    100014: Camera02.Target
+    100016: Camera03
+    100018: Camera03.Target
+    100020: CARAVISTA
+    100022: Collision 01
+    100024: Collision 02
+    100026: Collision 03
+    100028: Collision 04
+    100030: Compass01
+    100032: Compass02
+    100034: Daylight 01
+    100036: Daylight 02
+    100038: Display 01
+    100040: Display 02
+    100042: Display 03
+    100044: Display 04
+    100046: Display 05
+    100048: Display 06
+    100050: //RootNode
+    100052: Event 01
+    100054: Event 02
+    100056: Event 03
+    100058: Event 04
+    100060: Event 05
+    100062: Event 06
+    100064: Force 01
+    100066: Force 02
+    100068: Force 03
+    100070: Force 04
+    100072: MORADO
+    100074: Particle View 01
+    100076: Particle View 02
+    100078: PAVES
+    100080: PF Arrow01
+    100082: PF Arrow02
+    100084: Position Icon 01
+    100086: Position Icon 02
+    100088: Render 01
+    100090: Render 02
+    100092: ROJO MATE
+    100094: Rotation 01
+    100096: Rotation 02
+    100098: Scale 01
+    100100: Scale 02
+    100102: Scale 03
+    100104: Scale 04
+    100106: Shape 01
+    100108: Shape 02
+    100110: Sky02
+    100112: Sky03
+    100114: Speed 01
+    100116: Speed 02
+    100118: Speed 03
+    100120: Speed 04
+    100122: Split Amount 01
+    100124: Split Amount 02
+    100126: SUELO TERRAZA
+    100128: Sun01
+    100130: Sun02
+    100132: VEN
+    100134: VENHO_TI
+    100136: VENHOC_TI
+    100138: VENHOE_TI
+    100140: VERDE UJI
+    400000: AMARILLO MATE
+    400002: Birth 01
+    400004: Birth 02
+    400006: BLANCO MATE
+    400008: Camera01
+    400010: Camera01.Target
+    400012: Camera02
+    400014: Camera02.Target
+    400016: Camera03
+    400018: Camera03.Target
+    400020: CARAVISTA
+    400022: Collision 01
+    400024: Collision 02
+    400026: Collision 03
+    400028: Collision 04
+    400030: Compass01
+    400032: Compass02
+    400034: Daylight 01
+    400036: Daylight 02
+    400038: Display 01
+    400040: Display 02
+    400042: Display 03
+    400044: Display 04
+    400046: Display 05
+    400048: Display 06
+    400050: //RootNode
+    400052: Event 01
+    400054: Event 02
+    400056: Event 03
+    400058: Event 04
+    400060: Event 05
+    400062: Event 06
+    400064: Force 01
+    400066: Force 02
+    400068: Force 03
+    400070: Force 04
+    400072: MORADO
+    400074: Particle View 01
+    400076: Particle View 02
+    400078: PAVES
+    400080: PF Arrow01
+    400082: PF Arrow02
+    400084: Position Icon 01
+    400086: Position Icon 02
+    400088: Render 01
+    400090: Render 02
+    400092: ROJO MATE
+    400094: Rotation 01
+    400096: Rotation 02
+    400098: Scale 01
+    400100: Scale 02
+    400102: Scale 03
+    400104: Scale 04
+    400106: Shape 01
+    400108: Shape 02
+    400110: Sky02
+    400112: Sky03
+    400114: Speed 01
+    400116: Speed 02
+    400118: Speed 03
+    400120: Speed 04
+    400122: Split Amount 01
+    400124: Split Amount 02
+    400126: SUELO TERRAZA
+    400128: Sun01
+    400130: Sun02
+    400132: VEN
+    400134: VENHO_TI
+    400136: VENHOC_TI
+    400138: VENHOE_TI
+    400140: VERDE UJI
+    2300000: AMARILLO MATE
+    2300002: BLANCO MATE
+    2300004: CARAVISTA
+    2300006: MORADO
+    2300008: PAVES
+    2300010: ROJO MATE
+    2300012: SUELO TERRAZA
+    2300014: VEN
+    2300016: VENHO_TI
+    2300018: VENHOC_TI
+    2300020: VENHOE_TI
+    2300022: VERDE UJI
+    3300000: AMARILLO MATE
+    3300002: BLANCO MATE
+    3300004: CARAVISTA
+    3300006: MORADO
+    3300008: PAVES
+    3300010: ROJO MATE
+    3300012: SUELO TERRAZA
+    3300014: VEN
+    3300016: VENHO_TI
+    3300018: VENHOC_TI
+    3300020: VENHOE_TI
+    3300022: VERDE UJI
+    4300000: CARAVISTA
+    4300002: VENHO_TI
+    4300004: VENHOE_TI
+    4300006: VENHOC_TI
+    4300008: SUELO TERRAZA
+    4300010: PAVES
+    4300012: BLANCO MATE
+    4300014: ROJO MATE
+    4300016: VERDE UJI
+    4300018: MORADO
+    4300020: AMARILLO MATE
+    4300022: VEN
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 

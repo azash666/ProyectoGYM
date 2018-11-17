@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: 22dde26b65acb334babe2694c3f9435d
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: base01
+    100002: //RootNode
+    100004: Birth 01
+    100006: Birth 02
+    100008: BLANCO MATE
+    100010: CARAVISTA BLANCO
+    100012: CARRETERA
+    100014: CESPED
+    100016: Collision 01
+    100018: Collision 02
+    100020: Collision 03
+    100022: Collision 04
+    100024: detail-1
+    100026: Display 01
+    100028: Display 02
+    100030: Display 03
+    100032: Display 04
+    100034: Display 05
+    100036: Display 06
+    100038: Event 01
+    100040: Event 02
+    100042: Event 03
+    100044: Event 04
+    100046: Event 05
+    100048: Event 06
+    100050: Force 01
+    100052: Force 02
+    100054: Force 03
+    100056: Force 04
+    100058: GRIS CLARO MATE
+    100060: MORADO
+    100062: OXIDO
+    100064: Particle View 01
+    100066: Particle View 02
+    100068: PAVIMENTO
+    100070: PF Arrow01
+    100072: PF Arrow02
+    100074: Position Icon 01
+    100076: Position Icon 02
+    100078: PUECE_AZUL
+    100080: Render 01
+    100082: Render 02
+    100084: Rotation 01
+    100086: Rotation 02
+    100088: Scale 01
+    100090: Scale 02
+    100092: Scale 03
+    100094: Scale 04
+    100096: Shape 01
+    100098: Shape 02
+    100100: Speed 01
+    100102: Speed 02
+    100104: Speed 03
+    100106: Speed 04
+    100108: Split Amount 01
+    100110: Split Amount 02
+    100112: start01
+    100114: TIERRA
+    100116: VEN_BIBLIO
+    100118: VENHO_AZUL
+    100120: VENHO_HUMANAS
+    100122: VENHO_HUMANAS_V
+    400000: base01
+    400002: //RootNode
+    400004: Birth 01
+    400006: Birth 02
+    400008: BLANCO MATE
+    400010: CARAVISTA BLANCO
+    400012: CARRETERA
+    400014: CESPED
+    400016: Collision 01
+    400018: Collision 02
+    400020: Collision 03
+    400022: Collision 04
+    400024: detail-1
+    400026: Display 01
+    400028: Display 02
+    400030: Display 03
+    400032: Display 04
+    400034: Display 05
+    400036: Display 06
+    400038: Event 01
+    400040: Event 02
+    400042: Event 03
+    400044: Event 04
+    400046: Event 05
+    400048: Event 06
+    400050: Force 01
+    400052: Force 02
+    400054: Force 03
+    400056: Force 04
+    400058: GRIS CLARO MATE
+    400060: MORADO
+    400062: OXIDO
+    400064: Particle View 01
+    400066: Particle View 02
+    400068: PAVIMENTO
+    400070: PF Arrow01
+    400072: PF Arrow02
+    400074: Position Icon 01
+    400076: Position Icon 02
+    400078: PUECE_AZUL
+    400080: Render 01
+    400082: Render 02
+    400084: Rotation 01
+    400086: Rotation 02
+    400088: Scale 01
+    400090: Scale 02
+    400092: Scale 03
+    400094: Scale 04
+    400096: Shape 01
+    400098: Shape 02
+    400100: Speed 01
+    400102: Speed 02
+    400104: Speed 03
+    400106: Speed 04
+    400108: Split Amount 01
+    400110: Split Amount 02
+    400112: start01
+    400114: TIERRA
+    400116: VEN_BIBLIO
+    400118: VENHO_AZUL
+    400120: VENHO_HUMANAS
+    400122: VENHO_HUMANAS_V
+    2300000: BLANCO MATE
+    2300002: CARAVISTA BLANCO
+    2300004: CARRETERA
+    2300006: CESPED
+    2300008: GRIS CLARO MATE
+    2300010: MORADO
+    2300012: OXIDO
+    2300014: PAVIMENTO
+    2300016: PUECE_AZUL
+    2300018: TIERRA
+    2300020: VEN_BIBLIO
+    2300022: VENHO_AZUL
+    2300024: VENHO_HUMANAS
+    2300026: VENHO_HUMANAS_V
+    3300000: BLANCO MATE
+    3300002: CARAVISTA BLANCO
+    3300004: CARRETERA
+    3300006: CESPED
+    3300008: GRIS CLARO MATE
+    3300010: MORADO
+    3300012: OXIDO
+    3300014: PAVIMENTO
+    3300016: PUECE_AZUL
+    3300018: TIERRA
+    3300020: VEN_BIBLIO
+    3300022: VENHO_AZUL
+    3300024: VENHO_HUMANAS
+    3300026: VENHO_HUMANAS_V
+    4300000: BLANCO MATE
+    4300002: CARAVISTA BLANCO
+    4300004: CARRETERA
+    4300006: CESPED
+    4300008: GRIS CLARO MATE
+    4300010: MORADO
+    4300012: OXIDO
+    4300014: PAVIMENTO
+    4300016: PUECE_AZUL
+    4300018: TIERRA
+    4300020: VEN_BIBLIO
+    4300022: VENHO_AZUL
+    4300024: VENHO_HUMANAS
+    4300026: VENHO_HUMANAS_V
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 

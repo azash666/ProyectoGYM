@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: a74e9d62a86c1c34d97ab8e5c7ff89c6
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Birth 01
+    100002: Birth 02
+    100004: BLANCO MATE
+    100006: Camera01
+    100008: Camera01.Target
+    100010: CANCHA DE PADEL
+    100012: CANCHA DE TENIS
+    100014: Collision 01
+    100016: Collision 02
+    100018: Collision 03
+    100020: Collision 04
+    100022: Compass01
+    100024: Daylight 01
+    100026: Display 01
+    100028: Display 02
+    100030: Display 03
+    100032: Display 04
+    100034: Display 05
+    100036: Display 06
+    100038: Event 01
+    100040: Event 02
+    100042: Event 03
+    100044: Event 04
+    100046: Event 05
+    100048: Event 06
+    100050: Force 01
+    100052: Force 02
+    100054: Force 03
+    100056: Force 04
+    100058: GRIS MATE
+    100060: NARANJA RUIDO
+    100062: Particle View 01
+    100064: Particle View 02
+    100066: PAVIMENTO
+    100068: PF Arrow01
+    100070: PF Arrow02
+    100072: Position Icon 01
+    100074: Position Icon 02
+    100076: //RootNode
+    100078: RED
+    100080: REJA
+    100082: Render 01
+    100084: Render 02
+    100086: Rotation 01
+    100088: Rotation 02
+    100090: Scale 01
+    100092: Scale 02
+    100094: Scale 03
+    100096: Scale 04
+    100098: Shape 01
+    100100: Shape 02
+    100102: Sky02
+    100104: Speed 01
+    100106: Speed 02
+    100108: Speed 03
+    100110: Speed 04
+    100112: Split Amount 01
+    100114: Split Amount 02
+    100116: Sun01
+    100118: VALLA
+    100120: VENTANAL GRIS
+    100122: VERDE FRONTON
+    400000: Birth 01
+    400002: Birth 02
+    400004: BLANCO MATE
+    400006: Camera01
+    400008: Camera01.Target
+    400010: CANCHA DE PADEL
+    400012: CANCHA DE TENIS
+    400014: Collision 01
+    400016: Collision 02
+    400018: Collision 03
+    400020: Collision 04
+    400022: Compass01
+    400024: Daylight 01
+    400026: Display 01
+    400028: Display 02
+    400030: Display 03
+    400032: Display 04
+    400034: Display 05
+    400036: Display 06
+    400038: Event 01
+    400040: Event 02
+    400042: Event 03
+    400044: Event 04
+    400046: Event 05
+    400048: Event 06
+    400050: Force 01
+    400052: Force 02
+    400054: Force 03
+    400056: Force 04
+    400058: GRIS MATE
+    400060: NARANJA RUIDO
+    400062: Particle View 01
+    400064: Particle View 02
+    400066: PAVIMENTO
+    400068: PF Arrow01
+    400070: PF Arrow02
+    400072: Position Icon 01
+    400074: Position Icon 02
+    400076: //RootNode
+    400078: RED
+    400080: REJA
+    400082: Render 01
+    400084: Render 02
+    400086: Rotation 01
+    400088: Rotation 02
+    400090: Scale 01
+    400092: Scale 02
+    400094: Scale 03
+    400096: Scale 04
+    400098: Shape 01
+    400100: Shape 02
+    400102: Sky02
+    400104: Speed 01
+    400106: Speed 02
+    400108: Speed 03
+    400110: Speed 04
+    400112: Split Amount 01
+    400114: Split Amount 02
+    400116: Sun01
+    400118: VALLA
+    400120: VENTANAL GRIS
+    400122: VERDE FRONTON
+    2300000: BLANCO MATE
+    2300002: CANCHA DE PADEL
+    2300004: CANCHA DE TENIS
+    2300006: GRIS MATE
+    2300008: NARANJA RUIDO
+    2300010: PAVIMENTO
+    2300012: RED
+    2300014: REJA
+    2300016: VALLA
+    2300018: VENTANAL GRIS
+    2300020: VERDE FRONTON
+    3300000: BLANCO MATE
+    3300002: CANCHA DE PADEL
+    3300004: CANCHA DE TENIS
+    3300006: GRIS MATE
+    3300008: NARANJA RUIDO
+    3300010: PAVIMENTO
+    3300012: RED
+    3300014: REJA
+    3300016: VALLA
+    3300018: VENTANAL GRIS
+    3300020: VERDE FRONTON
+    4300000: PAVIMENTO
+    4300002: CANCHA DE TENIS
+    4300004: GRIS MATE
+    4300006: VENTANAL GRIS
+    4300008: VALLA
+    4300010: REJA
+    4300012: VERDE FRONTON
+    4300014: NARANJA RUIDO
+    4300016: BLANCO MATE
+    4300018: CANCHA DE PADEL
+    4300020: RED
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 

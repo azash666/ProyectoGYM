@@ -1,0 +1,342 @@
+fileFormatVersion: 2
+guid: 428c33c67353f444c844fc79c3a4eec7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Birth 01
+    100002: Birth 02
+    100004: Birth 03
+    100006: Birth 04
+    100008: BLANCO MATE
+    100010: Camera01
+    100012: Camera01.Target
+    100014: CARAVISTA BLANCO
+    100016: Collision 01
+    100018: Collision 02
+    100020: Collision 03
+    100022: Collision 04
+    100024: Collision 05
+    100026: Collision 06
+    100028: Collision 07
+    100030: Collision 08
+    100032: Compass02
+    100034: Daylight 02
+    100036: Display 01
+    100038: Display 02
+    100040: Display 03
+    100042: Display 04
+    100044: Display 05
+    100046: Display 06
+    100048: Display 07
+    100050: Display 08
+    100052: Display 09
+    100054: Display 10
+    100056: Display 11
+    100058: Display 12
+    100060: //RootNode
+    100062: Event 01
+    100064: Event 02
+    100066: Event 03
+    100068: Event 04
+    100070: Event 05
+    100072: Event 06
+    100074: Event 07
+    100076: Event 08
+    100078: Event 09
+    100080: Event 10
+    100082: Event 11
+    100084: Event 12
+    100086: Force 01
+    100088: Force 02
+    100090: Force 03
+    100092: Force 04
+    100094: Force 05
+    100096: Force 06
+    100098: Force 07
+    100100: Force 08
+    100102: GRIS CLARO MATE
+    100104: MORADO
+    100106: NEGRO MATE
+    100108: Particle View 01
+    100110: Particle View 02
+    100112: Particle View 03
+    100114: Particle View 04
+    100116: PAVES
+    100118: PAVIMENTO
+    100120: PF Arrow01
+    100122: PF Arrow02
+    100124: PF Arrow03
+    100126: PF Arrow04
+    100128: Position Icon 01
+    100130: Position Icon 02
+    100132: Position Icon 03
+    100134: Position Icon 04
+    100136: Render 01
+    100138: Render 02
+    100140: Render 03
+    100142: Render 04
+    100144: Rotation 01
+    100146: Rotation 02
+    100148: Rotation 03
+    100150: Rotation 04
+    100152: Scale 01
+    100154: Scale 02
+    100156: Scale 03
+    100158: Scale 04
+    100160: Scale 05
+    100162: Scale 06
+    100164: Scale 07
+    100166: Scale 08
+    100168: Shape 01
+    100170: Shape 02
+    100172: Shape 03
+    100174: Shape 04
+    100176: Sky02
+    100178: Speed 01
+    100180: Speed 02
+    100182: Speed 03
+    100184: Speed 04
+    100186: Speed 05
+    100188: Speed 06
+    100190: Speed 07
+    100192: Speed 08
+    100194: Split Amount 01
+    100196: Split Amount 02
+    100198: Split Amount 03
+    100200: Split Amount 04
+    100202: Sun01
+    100204: VEN_AZUL_GRANDE
+    100206: VENHO_AGORA
+    100208: VENHO_AZUL
+    400000: Birth 01
+    400002: Birth 02
+    400004: Birth 03
+    400006: Birth 04
+    400008: BLANCO MATE
+    400010: Camera01
+    400012: Camera01.Target
+    400014: CARAVISTA BLANCO
+    400016: Collision 01
+    400018: Collision 02
+    400020: Collision 03
+    400022: Collision 04
+    400024: Collision 05
+    400026: Collision 06
+    400028: Collision 07
+    400030: Collision 08
+    400032: Compass02
+    400034: Daylight 02
+    400036: Display 01
+    400038: Display 02
+    400040: Display 03
+    400042: Display 04
+    400044: Display 05
+    400046: Display 06
+    400048: Display 07
+    400050: Display 08
+    400052: Display 09
+    400054: Display 10
+    400056: Display 11
+    400058: Display 12
+    400060: //RootNode
+    400062: Event 01
+    400064: Event 02
+    400066: Event 03
+    400068: Event 04
+    400070: Event 05
+    400072: Event 06
+    400074: Event 07
+    400076: Event 08
+    400078: Event 09
+    400080: Event 10
+    400082: Event 11
+    400084: Event 12
+    400086: Force 01
+    400088: Force 02
+    400090: Force 03
+    400092: Force 04
+    400094: Force 05
+    400096: Force 06
+    400098: Force 07
+    400100: Force 08
+    400102: GRIS CLARO MATE
+    400104: MORADO
+    400106: NEGRO MATE
+    400108: Particle View 01
+    400110: Particle View 02
+    400112: Particle View 03
+    400114: Particle View 04
+    400116: PAVES
+    400118: PAVIMENTO
+    400120: PF Arrow01
+    400122: PF Arrow02
+    400124: PF Arrow03
+    400126: PF Arrow04
+    400128: Position Icon 01
+    400130: Position Icon 02
+    400132: Position Icon 03
+    400134: Position Icon 04
+    400136: Render 01
+    400138: Render 02
+    400140: Render 03
+    400142: Render 04
+    400144: Rotation 01
+    400146: Rotation 02
+    400148: Rotation 03
+    400150: Rotation 04
+    400152: Scale 01
+    400154: Scale 02
+    400156: Scale 03
+    400158: Scale 04
+    400160: Scale 05
+    400162: Scale 06
+    400164: Scale 07
+    400166: Scale 08
+    400168: Shape 01
+    400170: Shape 02
+    400172: Shape 03
+    400174: Shape 04
+    400176: Sky02
+    400178: Speed 01
+    400180: Speed 02
+    400182: Speed 03
+    400184: Speed 04
+    400186: Speed 05
+    400188: Speed 06
+    400190: Speed 07
+    400192: Speed 08
+    400194: Split Amount 01
+    400196: Split Amount 02
+    400198: Split Amount 03
+    400200: Split Amount 04
+    400202: Sun01
+    400204: VEN_AZUL_GRANDE
+    400206: VENHO_AGORA
+    400208: VENHO_AZUL
+    2100000: CARAVISTA BLANCO
+    2100002: BLANCO MATE
+    2100004: NEGRO MATE
+    2100006: VEN_AZUL_GRANDE
+    2100008: MORADO
+    2100010: VENHO_AGORA
+    2100012: PAVES
+    2100014: VENHO_AZUL
+    2100016: PAVIMENTO
+    2100018: GRIS CLARO MATE
+    2300000: BLANCO MATE
+    2300002: CARAVISTA BLANCO
+    2300004: GRIS CLARO MATE
+    2300006: MORADO
+    2300008: NEGRO MATE
+    2300010: PAVES
+    2300012: PAVIMENTO
+    2300014: VEN_AZUL_GRANDE
+    2300016: VENHO_AGORA
+    2300018: VENHO_AZUL
+    3300000: BLANCO MATE
+    3300002: CARAVISTA BLANCO
+    3300004: GRIS CLARO MATE
+    3300006: MORADO
+    3300008: NEGRO MATE
+    3300010: PAVES
+    3300012: PAVIMENTO
+    3300014: VEN_AZUL_GRANDE
+    3300016: VENHO_AGORA
+    3300018: VENHO_AZUL
+    4300000: CARAVISTA BLANCO
+    4300002: BLANCO MATE
+    4300004: NEGRO MATE
+    4300006: VEN_AZUL_GRANDE
+    4300008: MORADO
+    4300010: VENHO_AGORA
+    4300012: PAVES
+    4300014: VENHO_AZUL
+    4300016: PAVIMENTO
+    4300018: GRIS CLARO MATE
+    7400000: Take 001
+    9500000: //RootNode
+    10800000: Sky02
+    10800002: Sun01
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

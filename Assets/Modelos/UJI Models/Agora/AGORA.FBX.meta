@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: e3f0cbc6e78e4ca4f9be777417d7e741
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Birth 01
+    100004: Birth 02
+    100006: BLANCO MATE
+    100008: Camera01
+    100010: Camera01.Target
+    100012: Collision 01
+    100014: Collision 02
+    100016: Collision 03
+    100018: Collision 04
+    100020: Compass01
+    100022: Daylight 01
+    100024: Display 01
+    100026: Display 02
+    100028: Display 03
+    100030: Display 04
+    100032: Display 05
+    100034: Display 06
+    100036: Event 01
+    100038: Event 02
+    100040: Event 03
+    100042: Event 04
+    100044: Event 05
+    100046: Event 06
+    100048: Force 01
+    100050: Force 02
+    100052: Force 03
+    100054: Force 04
+    100056: GUANTE
+    100058: Particle View 01
+    100060: Particle View 02
+    100062: PF Arrow01
+    100064: PF Arrow02
+    100066: Position Icon 01
+    100068: Position Icon 02
+    100070: Render 01
+    100072: Render 02
+    100074: Rotation 01
+    100076: Rotation 02
+    100078: Scale 01
+    100080: Scale 02
+    100082: Scale 03
+    100084: Scale 04
+    100086: Shape 01
+    100088: Shape 02
+    100090: Sky02
+    100092: Speed 01
+    100094: Speed 02
+    100096: Speed 03
+    100098: Speed 04
+    100100: Split Amount 01
+    100102: Split Amount 02
+    100104: Sun01
+    400000: //RootNode
+    400002: Birth 01
+    400004: Birth 02
+    400006: BLANCO MATE
+    400008: Camera01
+    400010: Camera01.Target
+    400012: Collision 01
+    400014: Collision 02
+    400016: Collision 03
+    400018: Collision 04
+    400020: Compass01
+    400022: Daylight 01
+    400024: Display 01
+    400026: Display 02
+    400028: Display 03
+    400030: Display 04
+    400032: Display 05
+    400034: Display 06
+    400036: Event 01
+    400038: Event 02
+    400040: Event 03
+    400042: Event 04
+    400044: Event 05
+    400046: Event 06
+    400048: Force 01
+    400050: Force 02
+    400052: Force 03
+    400054: Force 04
+    400056: GUANTE
+    400058: Particle View 01
+    400060: Particle View 02
+    400062: PF Arrow01
+    400064: PF Arrow02
+    400066: Position Icon 01
+    400068: Position Icon 02
+    400070: Render 01
+    400072: Render 02
+    400074: Rotation 01
+    400076: Rotation 02
+    400078: Scale 01
+    400080: Scale 02
+    400082: Scale 03
+    400084: Scale 04
+    400086: Shape 01
+    400088: Shape 02
+    400090: Sky02
+    400092: Speed 01
+    400094: Speed 02
+    400096: Speed 03
+    400098: Speed 04
+    400100: Split Amount 01
+    400102: Split Amount 02
+    400104: Sun01
+    2300000: BLANCO MATE
+    2300002: GUANTE
+    3300000: BLANCO MATE
+    3300002: GUANTE
+    4300000: GUANTE
+    4300002: BLANCO MATE
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 

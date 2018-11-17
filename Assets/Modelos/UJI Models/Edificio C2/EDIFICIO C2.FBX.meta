@@ -1,0 +1,236 @@
+fileFormatVersion: 2
+guid: 5d3a6ead971f20943987cf5cb8b29ebe
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Birth 01
+    100002: Birth 02
+    100004: BLANCO MATE
+    100006: Camera01
+    100008: Camera01.Target
+    100010: CARAVISTA ROJIZA
+    100012: Collision 01
+    100014: Collision 02
+    100016: Collision 03
+    100018: Collision 04
+    100020: Compass01
+    100022: Daylight 01
+    100024: Display 01
+    100026: Display 02
+    100028: Display 03
+    100030: Display 04
+    100032: Display 05
+    100034: Display 06
+    100036: //RootNode
+    100038: Event 01
+    100040: Event 02
+    100042: Event 03
+    100044: Event 04
+    100046: Event 05
+    100048: Event 06
+    100050: Force 01
+    100052: Force 02
+    100054: Force 03
+    100056: Force 04
+    100058: Layer:0-venho e
+    100060: Particle View 01
+    100062: Particle View 02
+    100064: PAVIMENTO
+    100066: PF Arrow01
+    100068: PF Arrow02
+    100070: Position Icon 01
+    100072: Position Icon 02
+    100074: PUECE_JURIDICAS
+    100076: Render 01
+    100078: Render 02
+    100080: Rotation 01
+    100082: Rotation 02
+    100084: Scale 01
+    100086: Scale 02
+    100088: Scale 03
+    100090: Scale 04
+    100092: Shape 01
+    100094: Shape 02
+    100096: Sky02
+    100098: Speed 01
+    100100: Speed 02
+    100102: Speed 03
+    100104: Speed 04
+    100106: Split Amount 01
+    100108: Split Amount 02
+    100110: Sun01
+    100112: VENMACHON_JURIDICAS
+    100114: VENSIMPLE_JURIDICAS
+    400000: Birth 01
+    400002: Birth 02
+    400004: BLANCO MATE
+    400006: Camera01
+    400008: Camera01.Target
+    400010: CARAVISTA ROJIZA
+    400012: Collision 01
+    400014: Collision 02
+    400016: Collision 03
+    400018: Collision 04
+    400020: Compass01
+    400022: Daylight 01
+    400024: Display 01
+    400026: Display 02
+    400028: Display 03
+    400030: Display 04
+    400032: Display 05
+    400034: Display 06
+    400036: //RootNode
+    400038: Event 01
+    400040: Event 02
+    400042: Event 03
+    400044: Event 04
+    400046: Event 05
+    400048: Event 06
+    400050: Force 01
+    400052: Force 02
+    400054: Force 03
+    400056: Force 04
+    400058: Layer:0-venho e
+    400060: Particle View 01
+    400062: Particle View 02
+    400064: PAVIMENTO
+    400066: PF Arrow01
+    400068: PF Arrow02
+    400070: Position Icon 01
+    400072: Position Icon 02
+    400074: PUECE_JURIDICAS
+    400076: Render 01
+    400078: Render 02
+    400080: Rotation 01
+    400082: Rotation 02
+    400084: Scale 01
+    400086: Scale 02
+    400088: Scale 03
+    400090: Scale 04
+    400092: Shape 01
+    400094: Shape 02
+    400096: Sky02
+    400098: Speed 01
+    400100: Speed 02
+    400102: Speed 03
+    400104: Speed 04
+    400106: Split Amount 01
+    400108: Split Amount 02
+    400110: Sun01
+    400112: VENMACHON_JURIDICAS
+    400114: VENSIMPLE_JURIDICAS
+    2100000: VENMACHON_JURIDICAS
+    2100002: VENHORIZONTAL_JURIDICAS
+    2100004: VENSIMPLE_JURIDICAS
+    2100006: PUECE_JURIDICAS
+    2100008: BLANCO MATE
+    2100010: CARAVISTA ROJIZA
+    2100012: PAVIMENTO
+    2300000: BLANCO MATE
+    2300002: CARAVISTA ROJIZA
+    2300004: Layer:0-venho e
+    2300006: PAVIMENTO
+    2300008: PUECE_JURIDICAS
+    2300010: VENMACHON_JURIDICAS
+    2300012: VENSIMPLE_JURIDICAS
+    3300000: BLANCO MATE
+    3300002: CARAVISTA ROJIZA
+    3300004: Layer:0-venho e
+    3300006: PAVIMENTO
+    3300008: PUECE_JURIDICAS
+    3300010: VENMACHON_JURIDICAS
+    3300012: VENSIMPLE_JURIDICAS
+    4300000: VENMACHON_JURIDICAS
+    4300002: Layer:0-venho e
+    4300004: VENSIMPLE_JURIDICAS
+    4300006: PUECE_JURIDICAS
+    4300008: BLANCO MATE
+    4300010: CARAVISTA ROJIZA
+    4300012: PAVIMENTO
+    7400000: Take 001
+    9500000: //RootNode
+    10800000: Sky02
+    10800002: Sun01
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: 7e8e06659c31c314baba7b2b29188baa
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Birth 01
+    100002: Birth 02
+    100004: Camera01
+    100006: Camera01.Target
+    100008: Collision 01
+    100010: Collision 02
+    100012: Collision 03
+    100014: Collision 04
+    100016: Compass01
+    100018: Daylight 01
+    100020: Display 01
+    100022: Display 02
+    100024: Display 03
+    100026: Display 04
+    100028: Display 05
+    100030: Display 06
+    100032: Event 01
+    100034: Event 02
+    100036: Event 03
+    100038: Event 04
+    100040: Event 05
+    100042: Event 06
+    100044: Force 01
+    100046: Force 02
+    100048: Force 03
+    100050: Force 04
+    100052: GRIS CLARO MATE
+    100054: MUROS POLIDEPORTIVO
+    100056: Particle View 01
+    100058: Particle View 02
+    100060: PAVIMENTO
+    100062: PF Arrow01
+    100064: PF Arrow02
+    100066: //RootNode
+    100068: Position Icon 01
+    100070: Position Icon 02
+    100072: PUECE_POLI
+    100074: REJILLA CUBIERTA
+    100076: Render 01
+    100078: Render 02
+    100080: Rotation 01
+    100082: Rotation 02
+    100084: Scale 01
+    100086: Scale 02
+    100088: Scale 03
+    100090: Scale 04
+    100092: Shape 01
+    100094: Shape 02
+    100096: Sky02
+    100098: Speed 01
+    100100: Speed 02
+    100102: Speed 03
+    100104: Speed 04
+    100106: Split Amount 01
+    100108: Split Amount 02
+    100110: Sun01
+    100112: VENHO_POLI
+    400000: Birth 01
+    400002: Birth 02
+    400004: Camera01
+    400006: Camera01.Target
+    400008: Collision 01
+    400010: Collision 02
+    400012: Collision 03
+    400014: Collision 04
+    400016: Compass01
+    400018: Daylight 01
+    400020: Display 01
+    400022: Display 02
+    400024: Display 03
+    400026: Display 04
+    400028: Display 05
+    400030: Display 06
+    400032: Event 01
+    400034: Event 02
+    400036: Event 03
+    400038: Event 04
+    400040: Event 05
+    400042: Event 06
+    400044: Force 01
+    400046: Force 02
+    400048: Force 03
+    400050: Force 04
+    400052: GRIS CLARO MATE
+    400054: MUROS POLIDEPORTIVO
+    400056: Particle View 01
+    400058: Particle View 02
+    400060: PAVIMENTO
+    400062: PF Arrow01
+    400064: PF Arrow02
+    400066: //RootNode
+    400068: Position Icon 01
+    400070: Position Icon 02
+    400072: PUECE_POLI
+    400074: REJILLA CUBIERTA
+    400076: Render 01
+    400078: Render 02
+    400080: Rotation 01
+    400082: Rotation 02
+    400084: Scale 01
+    400086: Scale 02
+    400088: Scale 03
+    400090: Scale 04
+    400092: Shape 01
+    400094: Shape 02
+    400096: Sky02
+    400098: Speed 01
+    400100: Speed 02
+    400102: Speed 03
+    400104: Speed 04
+    400106: Split Amount 01
+    400108: Split Amount 02
+    400110: Sun01
+    400112: VENHO_POLI
+    2300000: GRIS CLARO MATE
+    2300002: MUROS POLIDEPORTIVO
+    2300004: PAVIMENTO
+    2300006: PUECE_POLI
+    2300008: REJILLA CUBIERTA
+    2300010: VENHO_POLI
+    3300000: GRIS CLARO MATE
+    3300002: MUROS POLIDEPORTIVO
+    3300004: PAVIMENTO
+    3300006: PUECE_POLI
+    3300008: REJILLA CUBIERTA
+    3300010: VENHO_POLI
+    4300000: MUROS POLIDEPORTIVO
+    4300002: GRIS CLARO MATE
+    4300004: VENHO_POLI
+    4300006: PUECE_POLI
+    4300008: REJILLA CUBIERTA
+    4300010: PAVIMENTO
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 

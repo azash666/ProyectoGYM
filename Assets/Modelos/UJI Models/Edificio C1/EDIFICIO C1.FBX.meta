@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: b7c42217fe6b162409476a6839bd3431
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Birth 01
+    100002: Birth 02
+    100004: BLANCO MATE
+    100006: Camera01
+    100008: Camera01.Target
+    100010: CARAVISTA ROJIZA
+    100012: Collision 01
+    100014: Collision 02
+    100016: Collision 03
+    100018: Collision 04
+    100020: Compass01
+    100022: Daylight 01
+    100024: Display 01
+    100026: Display 02
+    100028: Display 03
+    100030: Display 04
+    100032: Display 05
+    100034: Display 06
+    100036: //RootNode
+    100038: Event 01
+    100040: Event 02
+    100042: Event 03
+    100044: Event 04
+    100046: Event 05
+    100048: Event 06
+    100050: Force 01
+    100052: Force 02
+    100054: Force 03
+    100056: Force 04
+    100058: GRIS CLARO MATE
+    100060: MURO JURIDICAS
+    100062: Particle View 01
+    100064: Particle View 02
+    100066: PAVIMENTO
+    100068: PF Arrow01
+    100070: PF Arrow02
+    100072: Position Icon 01
+    100074: Position Icon 02
+    100076: PUECE_JURIDICAS
+    100078: Render 01
+    100080: Render 02
+    100082: Rotation 01
+    100084: Rotation 02
+    100086: Scale 01
+    100088: Scale 02
+    100090: Scale 03
+    100092: Scale 04
+    100094: Shape 01
+    100096: Shape 02
+    100098: Sky02
+    100100: Speed 01
+    100102: Speed 02
+    100104: Speed 03
+    100106: Speed 04
+    100108: Split Amount 01
+    100110: Split Amount 02
+    100112: Sun01
+    100114: VEN_JURIDICAS
+    100116: VENHOA_JURIDICAS
+    100118: VENHORIZONTAL_JURIDICAS
+    100120: VENSIMPLE_JURIDICAS
+    100122: VIDRIO JURIDICAS
+    400000: Birth 01
+    400002: Birth 02
+    400004: BLANCO MATE
+    400006: Camera01
+    400008: Camera01.Target
+    400010: CARAVISTA ROJIZA
+    400012: Collision 01
+    400014: Collision 02
+    400016: Collision 03
+    400018: Collision 04
+    400020: Compass01
+    400022: Daylight 01
+    400024: Display 01
+    400026: Display 02
+    400028: Display 03
+    400030: Display 04
+    400032: Display 05
+    400034: Display 06
+    400036: //RootNode
+    400038: Event 01
+    400040: Event 02
+    400042: Event 03
+    400044: Event 04
+    400046: Event 05
+    400048: Event 06
+    400050: Force 01
+    400052: Force 02
+    400054: Force 03
+    400056: Force 04
+    400058: GRIS CLARO MATE
+    400060: MURO JURIDICAS
+    400062: Particle View 01
+    400064: Particle View 02
+    400066: PAVIMENTO
+    400068: PF Arrow01
+    400070: PF Arrow02
+    400072: Position Icon 01
+    400074: Position Icon 02
+    400076: PUECE_JURIDICAS
+    400078: Render 01
+    400080: Render 02
+    400082: Rotation 01
+    400084: Rotation 02
+    400086: Scale 01
+    400088: Scale 02
+    400090: Scale 03
+    400092: Scale 04
+    400094: Shape 01
+    400096: Shape 02
+    400098: Sky02
+    400100: Speed 01
+    400102: Speed 02
+    400104: Speed 03
+    400106: Speed 04
+    400108: Split Amount 01
+    400110: Split Amount 02
+    400112: Sun01
+    400114: VEN_JURIDICAS
+    400116: VENHOA_JURIDICAS
+    400118: VENHORIZONTAL_JURIDICAS
+    400120: VENSIMPLE_JURIDICAS
+    400122: VIDRIO JURIDICAS
+    2300000: BLANCO MATE
+    2300002: CARAVISTA ROJIZA
+    2300004: GRIS CLARO MATE
+    2300006: MURO JURIDICAS
+    2300008: PAVIMENTO
+    2300010: PUECE_JURIDICAS
+    2300012: VEN_JURIDICAS
+    2300014: VENHOA_JURIDICAS
+    2300016: VENHORIZONTAL_JURIDICAS
+    2300018: VENSIMPLE_JURIDICAS
+    2300020: VIDRIO JURIDICAS
+    3300000: BLANCO MATE
+    3300002: CARAVISTA ROJIZA
+    3300004: GRIS CLARO MATE
+    3300006: MURO JURIDICAS
+    3300008: PAVIMENTO
+    3300010: PUECE_JURIDICAS
+    3300012: VEN_JURIDICAS
+    3300014: VENHOA_JURIDICAS
+    3300016: VENHORIZONTAL_JURIDICAS
+    3300018: VENSIMPLE_JURIDICAS
+    3300020: VIDRIO JURIDICAS
+    4300000: MURO JURIDICAS
+    4300002: VIDRIO JURIDICAS
+    4300004: VENHOA_JURIDICAS
+    4300006: VEN_JURIDICAS
+    4300008: VENHORIZONTAL_JURIDICAS
+    4300010: VENSIMPLE_JURIDICAS
+    4300012: PUECE_JURIDICAS
+    4300014: PAVIMENTO
+    4300016: GRIS CLARO MATE
+    4300018: CARAVISTA ROJIZA
+    4300020: BLANCO MATE
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 

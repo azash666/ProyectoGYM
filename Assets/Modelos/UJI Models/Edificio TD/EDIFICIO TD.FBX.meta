@@ -1,0 +1,395 @@
+fileFormatVersion: 2
+guid: 3a2bcf2673c963241af698324d9aabe8
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Birth 01
+    100002: Birth 01 1
+    100004: Birth 02
+    100006: Birth 02 1
+    100008: Birth 03
+    100010: Birth 04
+    100012: BLANCO MATE
+    100014: Camera01
+    100016: Camera01.Target
+    100018: Camera02
+    100020: Camera02.Target
+    100022: CARAVISTA
+    100024: CESPED
+    100026: Collision 01
+    100028: Collision 01 1
+    100030: Collision 02
+    100032: Collision 02 1
+    100034: Collision 03
+    100036: Collision 03 1
+    100038: Collision 04
+    100040: Collision 04 1
+    100042: Collision 05
+    100044: Collision 06
+    100046: Collision 07
+    100048: Collision 08
+    100050: Compass01
+    100052: Compass02
+    100054: Daylight 01
+    100056: Daylight 02
+    100058: Display 01
+    100060: Display 01 1
+    100062: Display 02
+    100064: Display 02 1
+    100066: Display 03
+    100068: Display 03 1
+    100070: Display 04
+    100072: Display 04 1
+    100074: Display 05
+    100076: Display 05 1
+    100078: Display 06
+    100080: Display 06 1
+    100082: Display 07
+    100084: Display 08
+    100086: Display 09
+    100088: Display 10
+    100090: Display 11
+    100092: Display 12
+    100094: //RootNode
+    100096: Event 01
+    100098: Event 01 1
+    100100: Event 02
+    100102: Event 02 1
+    100104: Event 03
+    100106: Event 03 1
+    100108: Event 04
+    100110: Event 04 1
+    100112: Event 05
+    100114: Event 05 1
+    100116: Event 06
+    100118: Event 06 1
+    100120: Event 07
+    100122: Event 08
+    100124: Event 09
+    100126: Event 10
+    100128: Event 11
+    100130: Event 12
+    100132: Force 01
+    100134: Force 01 1
+    100136: Force 02
+    100138: Force 02 1
+    100140: Force 03
+    100142: Force 03 1
+    100144: Force 04
+    100146: Force 04 1
+    100148: Force 05
+    100150: Force 06
+    100152: Force 07
+    100154: Force 08
+    100156: MORADO
+    100158: Particle View 01
+    100160: Particle View 01 1
+    100162: Particle View 02
+    100164: Particle View 02 1
+    100166: Particle View 03
+    100168: Particle View 04
+    100170: PAVES
+    100172: PF Arrow01
+    100174: PF Arrow01 1
+    100176: PF Arrow02
+    100178: PF Arrow02 1
+    100180: PF Arrow03
+    100182: PF Arrow04
+    100184: Position Icon 01
+    100186: Position Icon 01 1
+    100188: Position Icon 02
+    100190: Position Icon 02 1
+    100192: Position Icon 03
+    100194: Position Icon 04
+    100196: Render 01
+    100198: Render 01 1
+    100200: Render 02
+    100202: Render 02 1
+    100204: Render 03
+    100206: Render 04
+    100208: Rotation 01
+    100210: Rotation 01 1
+    100212: Rotation 02
+    100214: Rotation 02 1
+    100216: Rotation 03
+    100218: Rotation 04
+    100220: SARDINEL
+    100222: Scale 01
+    100224: Scale 01 1
+    100226: Scale 02
+    100228: Scale 02 1
+    100230: Scale 03
+    100232: Scale 03 1
+    100234: Scale 04
+    100236: Scale 04 1
+    100238: Scale 05
+    100240: Scale 06
+    100242: Scale 07
+    100244: Scale 08
+    100246: Shape 01
+    100248: Shape 01 1
+    100250: Shape 02
+    100252: Shape 02 1
+    100254: Shape 03
+    100256: Shape 04
+    100258: Sky02
+    100260: Sky03
+    100262: Speed 01
+    100264: Speed 01 1
+    100266: Speed 02
+    100268: Speed 02 1
+    100270: Speed 03
+    100272: Speed 03 1
+    100274: Speed 04
+    100276: Speed 04 1
+    100278: Speed 05
+    100280: Speed 06
+    100282: Speed 07
+    100284: Speed 08
+    100286: Split Amount 01
+    100288: Split Amount 01 1
+    100290: Split Amount 02
+    100292: Split Amount 02 1
+    100294: Split Amount 03
+    100296: Split Amount 04
+    100298: SUELO TERRAZA
+    100300: Sun01
+    100302: Sun02
+    100304: VEN
+    100306: VERDE UJI
+    400000: Birth 01
+    400002: Birth 01 1
+    400004: Birth 02
+    400006: Birth 02 1
+    400008: Birth 03
+    400010: Birth 04
+    400012: BLANCO MATE
+    400014: Camera01
+    400016: Camera01.Target
+    400018: Camera02
+    400020: Camera02.Target
+    400022: CARAVISTA
+    400024: CESPED
+    400026: Collision 01
+    400028: Collision 01 1
+    400030: Collision 02
+    400032: Collision 02 1
+    400034: Collision 03
+    400036: Collision 03 1
+    400038: Collision 04
+    400040: Collision 04 1
+    400042: Collision 05
+    400044: Collision 06
+    400046: Collision 07
+    400048: Collision 08
+    400050: Compass01
+    400052: Compass02
+    400054: Daylight 01
+    400056: Daylight 02
+    400058: Display 01
+    400060: Display 01 1
+    400062: Display 02
+    400064: Display 02 1
+    400066: Display 03
+    400068: Display 03 1
+    400070: Display 04
+    400072: Display 04 1
+    400074: Display 05
+    400076: Display 05 1
+    400078: Display 06
+    400080: Display 06 1
+    400082: Display 07
+    400084: Display 08
+    400086: Display 09
+    400088: Display 10
+    400090: Display 11
+    400092: Display 12
+    400094: //RootNode
+    400096: Event 01
+    400098: Event 01 1
+    400100: Event 02
+    400102: Event 02 1
+    400104: Event 03
+    400106: Event 03 1
+    400108: Event 04
+    400110: Event 04 1
+    400112: Event 05
+    400114: Event 05 1
+    400116: Event 06
+    400118: Event 06 1
+    400120: Event 07
+    400122: Event 08
+    400124: Event 09
+    400126: Event 10
+    400128: Event 11
+    400130: Event 12
+    400132: Force 01
+    400134: Force 01 1
+    400136: Force 02
+    400138: Force 02 1
+    400140: Force 03
+    400142: Force 03 1
+    400144: Force 04
+    400146: Force 04 1
+    400148: Force 05
+    400150: Force 06
+    400152: Force 07
+    400154: Force 08
+    400156: MORADO
+    400158: Particle View 01
+    400160: Particle View 01 1
+    400162: Particle View 02
+    400164: Particle View 02 1
+    400166: Particle View 03
+    400168: Particle View 04
+    400170: PAVES
+    400172: PF Arrow01
+    400174: PF Arrow01 1
+    400176: PF Arrow02
+    400178: PF Arrow02 1
+    400180: PF Arrow03
+    400182: PF Arrow04
+    400184: Position Icon 01
+    400186: Position Icon 01 1
+    400188: Position Icon 02
+    400190: Position Icon 02 1
+    400192: Position Icon 03
+    400194: Position Icon 04
+    400196: Render 01
+    400198: Render 01 1
+    400200: Render 02
+    400202: Render 02 1
+    400204: Render 03
+    400206: Render 04
+    400208: Rotation 01
+    400210: Rotation 01 1
+    400212: Rotation 02
+    400214: Rotation 02 1
+    400216: Rotation 03
+    400218: Rotation 04
+    400220: SARDINEL
+    400222: Scale 01
+    400224: Scale 01 1
+    400226: Scale 02
+    400228: Scale 02 1
+    400230: Scale 03
+    400232: Scale 03 1
+    400234: Scale 04
+    400236: Scale 04 1
+    400238: Scale 05
+    400240: Scale 06
+    400242: Scale 07
+    400244: Scale 08
+    400246: Shape 01
+    400248: Shape 01 1
+    400250: Shape 02
+    400252: Shape 02 1
+    400254: Shape 03
+    400256: Shape 04
+    400258: Sky02
+    400260: Sky03
+    400262: Speed 01
+    400264: Speed 01 1
+    400266: Speed 02
+    400268: Speed 02 1
+    400270: Speed 03
+    400272: Speed 03 1
+    400274: Speed 04
+    400276: Speed 04 1
+    400278: Speed 05
+    400280: Speed 06
+    400282: Speed 07
+    400284: Speed 08
+    400286: Split Amount 01
+    400288: Split Amount 01 1
+    400290: Split Amount 02
+    400292: Split Amount 02 1
+    400294: Split Amount 03
+    400296: Split Amount 04
+    400298: SUELO TERRAZA
+    400300: Sun01
+    400302: Sun02
+    400304: VEN
+    400306: VERDE UJI
+    2300000: BLANCO MATE
+    2300002: CARAVISTA
+    2300004: CESPED
+    2300006: MORADO
+    2300008: PAVES
+    2300010: SARDINEL
+    2300012: SUELO TERRAZA
+    2300014: VEN
+    2300016: VERDE UJI
+    3300000: BLANCO MATE
+    3300002: CARAVISTA
+    3300004: CESPED
+    3300006: MORADO
+    3300008: PAVES
+    3300010: SARDINEL
+    3300012: SUELO TERRAZA
+    3300014: VEN
+    3300016: VERDE UJI
+    4300000: SARDINEL
+    4300002: SUELO TERRAZA
+    4300004: CESPED
+    4300006: PAVES
+    4300008: MORADO
+    4300010: BLANCO MATE
+    4300012: VERDE UJI
+    4300014: VEN
+    4300016: CARAVISTA
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 

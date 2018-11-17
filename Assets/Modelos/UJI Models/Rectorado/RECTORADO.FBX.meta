@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: 8108266f149ba244e92fce4d1a96764a
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Birth 01
+    100002: Birth 02
+    100004: BLANCO MATE
+    100006: Camera01
+    100008: Camera01.Target
+    100010: Camera02
+    100012: Camera02.Target
+    100014: CARAVISTA BLANCO
+    100016: CARAVISTA_BLANCOAGUJEROS
+    100018: CESPED
+    100020: Collision 01
+    100022: Collision 02
+    100024: Collision 03
+    100026: Collision 04
+    100028: Compass01
+    100030: Compass02
+    100032: Daylight 01
+    100034: Daylight 02
+    100036: Display 01
+    100038: Display 02
+    100040: Display 03
+    100042: Display 04
+    100044: Display 05
+    100046: Display 06
+    100048: Event 01
+    100050: Event 02
+    100052: Event 03
+    100054: Event 04
+    100056: Event 05
+    100058: Event 06
+    100060: Force 01
+    100062: Force 02
+    100064: Force 03
+    100066: Force 04
+    100068: Particle View 01
+    100070: Particle View 02
+    100072: PAVES
+    100074: PF Arrow01
+    100076: PF Arrow02
+    100078: Position Icon 01
+    100080: Position Icon 02
+    100082: PUECE_AZUL
+    100084: //RootNode
+    100086: Render 01
+    100088: Render 02
+    100090: Rotation 01
+    100092: Rotation 02
+    100094: SARDINEL BLANCO
+    100096: Scale 01
+    100098: Scale 02
+    100100: Scale 03
+    100102: Scale 04
+    100104: Shape 01
+    100106: Shape 02
+    100108: Sky02
+    100110: Sky03
+    100112: Speed 01
+    100114: Speed 02
+    100116: Speed 03
+    100118: Speed 04
+    100120: Split Amount 01
+    100122: Split Amount 02
+    100124: SUELO TERRAZA
+    100126: Sun01
+    100128: Sun02
+    100130: VEN_AZUL
+    100132: VEN_AZUL_CIRCULAR
+    100134: VEN_AZUL_GRANDE
+    100136: VENTANAL_AZUL
+    400000: Birth 01
+    400002: Birth 02
+    400004: BLANCO MATE
+    400006: Camera01
+    400008: Camera01.Target
+    400010: Camera02
+    400012: Camera02.Target
+    400014: CARAVISTA BLANCO
+    400016: CARAVISTA_BLANCOAGUJEROS
+    400018: CESPED
+    400020: Collision 01
+    400022: Collision 02
+    400024: Collision 03
+    400026: Collision 04
+    400028: Compass01
+    400030: Compass02
+    400032: Daylight 01
+    400034: Daylight 02
+    400036: Display 01
+    400038: Display 02
+    400040: Display 03
+    400042: Display 04
+    400044: Display 05
+    400046: Display 06
+    400048: Event 01
+    400050: Event 02
+    400052: Event 03
+    400054: Event 04
+    400056: Event 05
+    400058: Event 06
+    400060: Force 01
+    400062: Force 02
+    400064: Force 03
+    400066: Force 04
+    400068: Particle View 01
+    400070: Particle View 02
+    400072: PAVES
+    400074: PF Arrow01
+    400076: PF Arrow02
+    400078: Position Icon 01
+    400080: Position Icon 02
+    400082: PUECE_AZUL
+    400084: //RootNode
+    400086: Render 01
+    400088: Render 02
+    400090: Rotation 01
+    400092: Rotation 02
+    400094: SARDINEL BLANCO
+    400096: Scale 01
+    400098: Scale 02
+    400100: Scale 03
+    400102: Scale 04
+    400104: Shape 01
+    400106: Shape 02
+    400108: Sky02
+    400110: Sky03
+    400112: Speed 01
+    400114: Speed 02
+    400116: Speed 03
+    400118: Speed 04
+    400120: Split Amount 01
+    400122: Split Amount 02
+    400124: SUELO TERRAZA
+    400126: Sun01
+    400128: Sun02
+    400130: VEN_AZUL
+    400132: VEN_AZUL_CIRCULAR
+    400134: VEN_AZUL_GRANDE
+    400136: VENTANAL_AZUL
+    2300000: BLANCO MATE
+    2300002: CARAVISTA BLANCO
+    2300004: CARAVISTA_BLANCOAGUJEROS
+    2300006: CESPED
+    2300008: PAVES
+    2300010: PUECE_AZUL
+    2300012: SARDINEL BLANCO
+    2300014: SUELO TERRAZA
+    2300016: VEN_AZUL
+    2300018: VEN_AZUL_CIRCULAR
+    2300020: VEN_AZUL_GRANDE
+    2300022: VENTANAL_AZUL
+    3300000: BLANCO MATE
+    3300002: CARAVISTA BLANCO
+    3300004: CARAVISTA_BLANCOAGUJEROS
+    3300006: CESPED
+    3300008: PAVES
+    3300010: PUECE_AZUL
+    3300012: SARDINEL BLANCO
+    3300014: SUELO TERRAZA
+    3300016: VEN_AZUL
+    3300018: VEN_AZUL_CIRCULAR
+    3300020: VEN_AZUL_GRANDE
+    3300022: VENTANAL_AZUL
+    4300000: PUECE_AZUL
+    4300002: VEN_AZUL
+    4300004: VENTANAL_AZUL
+    4300006: VEN_AZUL_CIRCULAR
+    4300008: VEN_AZUL_GRANDE
+    4300010: BLANCO MATE
+    4300012: SUELO TERRAZA
+    4300014: SARDINEL BLANCO
+    4300016: CESPED
+    4300018: CARAVISTA BLANCO
+    4300020: CARAVISTA_BLANCOAGUJEROS
+    4300022: PAVES
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 

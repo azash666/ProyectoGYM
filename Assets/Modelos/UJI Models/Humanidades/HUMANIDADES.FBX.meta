@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: 4f3adffb2e493d249aec992d70e16225
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Birth 01
+    100002: Birth 02
+    100004: BLANCO MATE
+    100006: Camera01
+    100008: Camera01.Target
+    100010: Collision 01
+    100012: Collision 02
+    100014: Collision 03
+    100016: Collision 04
+    100018: Compass01
+    100020: Daylight 01
+    100022: Display 01
+    100024: Display 02
+    100026: Display 03
+    100028: Display 04
+    100030: Display 05
+    100032: Display 06
+    100034: Event 01
+    100036: Event 02
+    100038: Event 03
+    100040: Event 04
+    100042: Event 05
+    100044: Event 06
+    100046: Force 01
+    100048: Force 02
+    100050: Force 03
+    100052: Force 04
+    100054: //RootNode
+    100056: MORADO
+    100058: MUROS HUMANAS
+    100060: MUROS HUMANAS_GRIS
+    100062: Particle View 01
+    100064: Particle View 02
+    100066: PAVES
+    100068: PAVIMENTO
+    100070: PF Arrow01
+    100072: PF Arrow02
+    100074: Position Icon 01
+    100076: Position Icon 02
+    100078: Render 01
+    100080: Render 02
+    100082: Rotation 01
+    100084: Rotation 02
+    100086: Scale 01
+    100088: Scale 02
+    100090: Scale 03
+    100092: Scale 04
+    100094: Shape 01
+    100096: Shape 02
+    100098: Sky02
+    100100: Speed 01
+    100102: Speed 02
+    100104: Speed 03
+    100106: Speed 04
+    100108: Split Amount 01
+    100110: Split Amount 02
+    100112: Sun01
+    100114: VENHO_AZUL
+    100116: VENHO_HUMANAS
+    100118: VENHO_HUMANAS_V
+    400000: Birth 01
+    400002: Birth 02
+    400004: BLANCO MATE
+    400006: Camera01
+    400008: Camera01.Target
+    400010: Collision 01
+    400012: Collision 02
+    400014: Collision 03
+    400016: Collision 04
+    400018: Compass01
+    400020: Daylight 01
+    400022: Display 01
+    400024: Display 02
+    400026: Display 03
+    400028: Display 04
+    400030: Display 05
+    400032: Display 06
+    400034: Event 01
+    400036: Event 02
+    400038: Event 03
+    400040: Event 04
+    400042: Event 05
+    400044: Event 06
+    400046: Force 01
+    400048: Force 02
+    400050: Force 03
+    400052: Force 04
+    400054: //RootNode
+    400056: MORADO
+    400058: MUROS HUMANAS
+    400060: MUROS HUMANAS_GRIS
+    400062: Particle View 01
+    400064: Particle View 02
+    400066: PAVES
+    400068: PAVIMENTO
+    400070: PF Arrow01
+    400072: PF Arrow02
+    400074: Position Icon 01
+    400076: Position Icon 02
+    400078: Render 01
+    400080: Render 02
+    400082: Rotation 01
+    400084: Rotation 02
+    400086: Scale 01
+    400088: Scale 02
+    400090: Scale 03
+    400092: Scale 04
+    400094: Shape 01
+    400096: Shape 02
+    400098: Sky02
+    400100: Speed 01
+    400102: Speed 02
+    400104: Speed 03
+    400106: Speed 04
+    400108: Split Amount 01
+    400110: Split Amount 02
+    400112: Sun01
+    400114: VENHO_AZUL
+    400116: VENHO_HUMANAS
+    400118: VENHO_HUMANAS_V
+    2300000: BLANCO MATE
+    2300002: MORADO
+    2300004: MUROS HUMANAS
+    2300006: MUROS HUMANAS_GRIS
+    2300008: PAVES
+    2300010: PAVIMENTO
+    2300012: VENHO_AZUL
+    2300014: VENHO_HUMANAS
+    2300016: VENHO_HUMANAS_V
+    3300000: BLANCO MATE
+    3300002: MORADO
+    3300004: MUROS HUMANAS
+    3300006: MUROS HUMANAS_GRIS
+    3300008: PAVES
+    3300010: PAVIMENTO
+    3300012: VENHO_AZUL
+    3300014: VENHO_HUMANAS
+    3300016: VENHO_HUMANAS_V
+    4300000: BLANCO MATE
+    4300002: PAVES
+    4300004: VENHO_HUMANAS
+    4300006: VENHO_AZUL
+    4300008: MUROS HUMANAS_GRIS
+    4300010: PAVIMENTO
+    4300012: MORADO
+    4300014: MUROS HUMANAS
+    4300016: VENHO_HUMANAS_V
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 
