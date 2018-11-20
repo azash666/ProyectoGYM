@@ -7,7 +7,7 @@ public class Zombie : MonoBehaviour {
     GameObject player;
     private NavMeshAgent nav;
     bool noEncontrado;
-    public float distancia;
+    public float distancia, distanciaJugador;
     GameObject destino;
 	// Use this for initialization
 	void Start () {
@@ -18,8 +18,17 @@ public class Zombie : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         distancia = Vector3.Distance(transform.position, player.transform.position);
+        distanciaJugador = distancia;
         GameObject aux = player;
-       
+        if (GameController.vivos.Count > 0) {
+            foreach(GameObject vivo in GameController.vivos) {
+                if(Vector3.Distance(vivo.transform.position, transform.position) < distancia)
+                {
+                    distancia = Vector3.Distance(vivo.transform.position, transform.position);
+                    aux = vivo;
+                }
+            }
+        }
         destino = aux;
         if (distancia < 6f)
         {
@@ -37,7 +46,7 @@ public class Zombie : MonoBehaviour {
                 
             }
         }
-        if (distancia > 20f) {
+        if (distanciaJugador > 25f) {
             GameController.muertos.Remove(gameObject);
             Destroy(gameObject);
         }
