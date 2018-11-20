@@ -7,34 +7,24 @@ public class Zombie : MonoBehaviour {
     GameObject player;
     private NavMeshAgent nav;
     bool noEncontrado;
+    public bool morir;
     public float distancia, distanciaJugador;
     GameObject destino;
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
         nav = GetComponent<NavMeshAgent>();
+        morir = false;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        distancia = Vector3.Distance(transform.position, player.transform.position);
-        distanciaJugador = distancia;
-        GameObject aux = player;
-        if (GameController.vivos.Count > 0) {
-            foreach(GameObject vivo in GameController.vivos) {
-                if(Vector3.Distance(vivo.transform.position, transform.position) < distancia)
-                {
-                    distancia = Vector3.Distance(vivo.transform.position, transform.position);
-                    aux = vivo;
-                }
-            }
-        }
-        destino = aux;
-        if (distancia < 6f)
+        distanciaJugador = Vector3.Distance(player.transform.position, transform.position);
+        if (destino!=gameObject)
         {
             nav.SetDestination(destino.transform.position);
             noEncontrado = false;
-            nav.speed = 3.5f;
+            nav.speed = Random.Range(2.5f,3.5f);
         }
         else
         {
@@ -47,8 +37,12 @@ public class Zombie : MonoBehaviour {
             }
         }
         if (distanciaJugador > 25f) {
-            GameController.muertos.Remove(gameObject);
-            Destroy(gameObject);
+            morir = true;
         }
+    }
+
+    public void setDestino(GameObject destino)
+    {
+        this.destino = destino;
     }
 }

@@ -57,7 +57,7 @@ public class SphereManager : MonoBehaviour {
 
             float z = Random.Range(minZ, maxZ);
 
-            Instantiate(vectorObjects[numero], new Vector3(x, y, z), new Quaternion());
+            //Instantiate(vectorObjects[numero], new Vector3(x, y, z), new Quaternion());
             //cantidadEsferas++;
         }
 
@@ -66,6 +66,6 @@ public class SphereManager : MonoBehaviour {
 
     public void esferaDestruida(int cual)
     {
-        numeroObjects[cual]--
+        numeroObjects[cual]--;
     }
 }
