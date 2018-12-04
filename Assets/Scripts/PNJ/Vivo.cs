@@ -22,26 +22,48 @@ public class Vivo : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        distanciaJugador = Vector3.Distance(player.transform.position, transform.position);
-        if (destino != gameObject)
+        setDestino(GameController.muertoMasCercano(gameObject));
+        if (convertir)
         {
-            posicionDestino = destino.transform.position;
-            nav.SetDestination(new Vector3(
-                2 * transform.position.x - posicionDestino.x,
-                transform.position.y,
-                2 * transform.position.z - posicionDestino.z
-                ));
-            noEncontrado = false;
-            nav.speed = Random.Range(3f, 4f);
+            GameObject nuevo = Object.Instantiate(GameController.zombie, new Vector3(
+                gameObject.transform.position.x,
+                gameObject.transform.position.y,
+                gameObject.transform.position.z), gameObject.transform.rotation);
+            GameController.muertos.Add(nuevo);
+            morir = true;
+            GameController.numZombies++;
+            GameController.numVivos-=0.5f;
         }
-        else
+        if (morir)
         {
-            if (!noEncontrado)
-            {
-                noEncontrado = true;
-                nav.speed = Random.Range(2f, 3f);
-                nav.SetDestination(new Vector3(transform.position.x + Random.Range(-100f, 100f), transform.position.y, transform.position.z + Random.Range(-100f, 100f)));
+            Destroy(gameObject);
+            GameController.vivos.Remove(gameObject);
+        }
 
+
+        distanciaJugador = Vector3.Distance(player.transform.position, transform.position);
+        if (!morir && !convertir)
+        {
+            if (destino != gameObject)
+            {
+                posicionDestino = destino.transform.position;
+                nav.SetDestination(new Vector3(
+                    2 * transform.position.x - posicionDestino.x,
+                    transform.position.y,
+                    2 * transform.position.z - posicionDestino.z
+                    ));
+                noEncontrado = false;
+                nav.speed = Random.Range(12f, 16f) / 4f;
+            }
+            else
+            {
+                if (!noEncontrado)
+                {
+                    noEncontrado = true;
+                    nav.speed = Random.Range(8f, 12f) / 4f;
+                    nav.SetDestination(new Vector3(transform.position.x + Random.Range(-100f, 100f), transform.position.y, transform.position.z + Random.Range(-100f, 100f)));
+
+                }
             }
         }
         if (distanciaJugador > 30f)

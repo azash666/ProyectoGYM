@@ -6,16 +6,19 @@ public class GameController : MonoBehaviour
 {
     public static List<GameObject> muertos;
     public static List<GameObject> vivos;
-    public int numVivos = 1;
-    public int numZombies = 5;
-    public GameObject zombie, vivo;
-    GameObject player;
+    public static float numVivos = 15;
+    public static int numZombies = 1;
+    public static GameObject zombie, vivo;
+    public GameObject zombie2, vivo2;
+    static GameObject player;
 
 	// Use this for initialization
 	void Start () {
         muertos = new List<GameObject>();
         vivos = new List<GameObject>();
         player = GameObject.FindGameObjectWithTag("Player");
+        zombie = zombie2;
+        vivo = vivo2;
     }
 	
 	// Update is called once per frame
@@ -23,38 +26,7 @@ public class GameController : MonoBehaviour
     {
         spawnMuertos();
         spawnVivo();
-        for (int i = muertos.Count - 1; i >= 0; i--)
-        {
-            Zombie script = muertos[i].GetComponent<Zombie>();
-            script.setDestino(vivoMasCercano(muertos[i]));
-            if (script.morir)
-            {
-                Destroy(muertos[i]);
-                muertos.RemoveAt(i);
-            }
-        }
-        for (int i = vivos.Count - 1; i >= 0; i--)
-        {
-            Vivo script = vivos[i].GetComponent<Vivo>();
-            script.setDestino(muertoMasCercano(vivos[i]));
-            if (script.convertir)
-            {
-                GameObject nuevo = Object.Instantiate(zombie, new Vector3(
-                    vivos[i].transform.position.x,
-                    vivos[i].transform.position.y,
-                    vivos[i].transform.position.z), vivos[i].transform.rotation);
-                muertos.Add(nuevo);
-                script.morir = true;
-                numZombies++;
-                numVivos--;
-            }
-            if (script.morir)
-            {
-                Destroy(vivos[i]);
-                vivos.RemoveAt(i);
-            }
-            
-        }
+       
     }
 
     private void spawnMuertos()
@@ -63,25 +35,37 @@ public class GameController : MonoBehaviour
         {
             int pos = Random.Range(0, 4);
             GameObject nuevo;
+            RaycastHit hit;
+            Vector3 posicion;
             switch (pos)
             {
                 case 0:
 
-                    nuevo = Object.Instantiate(zombie, new Vector3(player.transform.position.x + Random.Range(-20f, 20f), player.transform.position.y, player.transform.position.z + 20f), Quaternion.identity);
+                    posicion = new Vector3(player.transform.position.x + Random.Range(-20f, 20f), player.transform.position.y+20f, player.transform.position.z + 20f);
                     break;
                 case 1:
 
-                    nuevo = Object.Instantiate(zombie, new Vector3(player.transform.position.x + Random.Range(-20f, 20f), player.transform.position.y, player.transform.position.z - 20f), Quaternion.identity);
+                    posicion = new Vector3(player.transform.position.x + Random.Range(-20f, 20f), player.transform.position.y + 20f, player.transform.position.z - 20f);
                     break;
                 case 2:
 
-                    nuevo = Object.Instantiate(zombie, new Vector3(player.transform.position.x + 20f, player.transform.position.y, player.transform.position.z + Random.Range(-20f, 20f)), Quaternion.identity);
+                    posicion = new Vector3(player.transform.position.x + 20f, player.transform.position.y + 20f, player.transform.position.z + Random.Range(-20f, 20f));
                     break;
 
                 default:
-                    nuevo = Object.Instantiate(zombie, new Vector3(player.transform.position.x - 20f, player.transform.position.y, player.transform.position.z + Random.Range(-20f, 20f)), Quaternion.identity);
+                    posicion = new Vector3(player.transform.position.x - 20f, player.transform.position.y + 20f, player.transform.position.z + Random.Range(-20f, 20f));
                     break;
             }
+            Ray rayo = new Ray(posicion, Vector3.down);
+            if (Physics.Raycast(rayo, out hit))
+            {
+                /*if (hit.rigidbody != null)
+                {*/
+                    posicion = hit.point;
+                //}
+            }
+            Debug.Log(posicion);
+            nuevo = Object.Instantiate(zombie, posicion, Quaternion.identity);
             muertos.Add(nuevo);
         }
     }
@@ -96,26 +80,26 @@ public class GameController : MonoBehaviour
             {
                 case 0:
 
-                    nuevo = Object.Instantiate(vivo, new Vector3(player.transform.position.x + Random.Range(-25f, 25f), player.transform.position.y, player.transform.position.z + 25f), Quaternion.identity);
+                    nuevo = Object.Instantiate(vivo, new Vector3(player.transform.position.x + Random.Range(-25f, 25f), player.transform.position.y + 0, player.transform.position.z + 25f), Quaternion.identity);
                     break;
                 case 1:
 
-                    nuevo = Object.Instantiate(vivo, new Vector3(player.transform.position.x + Random.Range(-25f, 25f), player.transform.position.y, player.transform.position.z - 25f), Quaternion.identity);
+                    nuevo = Object.Instantiate(vivo, new Vector3(player.transform.position.x + Random.Range(-25f, 25f), player.transform.position.y + 0, player.transform.position.z - 25f), Quaternion.identity);
                     break;
                 case 2:
 
-                    nuevo = Object.Instantiate(vivo, new Vector3(player.transform.position.x + 25f, player.transform.position.y, player.transform.position.z + Random.Range(-25f, 25f)), Quaternion.identity);
+                    nuevo = Object.Instantiate(vivo, new Vector3(player.transform.position.x + 25f, player.transform.position.y + 0, player.transform.position.z + Random.Range(-25f, 25f)), Quaternion.identity);
                     break;
 
                 default:
-                    nuevo = Object.Instantiate(vivo, new Vector3(player.transform.position.x - 25f, player.transform.position.y, player.transform.position.z + Random.Range(-25f, 25f)), Quaternion.identity);
+                    nuevo = Object.Instantiate(vivo, new Vector3(player.transform.position.x - 25f, player.transform.position.y + 0, player.transform.position.z + Random.Range(-25f, 25f)), Quaternion.identity);
                     break;
             }
             vivos.Add(nuevo);
         }
     }
 
-    public GameObject muertoMasCercano(GameObject vivo)
+    public static GameObject muertoMasCercano(GameObject vivo)
     {
         float distancia = 100f;
         GameObject devolver = vivo;
@@ -135,7 +119,7 @@ public class GameController : MonoBehaviour
         else return vivo;
     }
 
-    public GameObject vivoMasCercano(GameObject muerto)
+    public static GameObject vivoMasCercano(GameObject muerto)
     {
         float distancia = 100f;
         GameObject devolver = muerto;

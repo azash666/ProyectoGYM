@@ -19,21 +19,30 @@ public class Zombie : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        distanciaJugador = Vector3.Distance(player.transform.position, transform.position);
-        if (destino!=gameObject)
+        setDestino(GameController.vivoMasCercano(gameObject));
+        if (morir)
         {
-            nav.SetDestination(destino.transform.position);
-            noEncontrado = false;
-            nav.speed = Random.Range(2.5f,3.5f);
+            Destroy(gameObject);
+            GameController.muertos.Remove(gameObject);
         }
         else
         {
-            if (!noEncontrado)
+            distanciaJugador = Vector3.Distance(player.transform.position, transform.position);
+            if (destino != gameObject)
             {
-                noEncontrado = true;
-                nav.speed = Random.Range(0.5f, 1.5f);
-                nav.SetDestination(new Vector3(transform.position.x+Random.Range(-100f, 100f), transform.position.y, transform.position.z + Random.Range(-100f, 100f)));
-                
+                nav.SetDestination(destino.transform.position);
+                noEncontrado = false;
+                nav.speed = Random.Range(10f, 14f) / 4f;
+            }
+            else
+            {
+                if (!noEncontrado)
+                {
+                    noEncontrado = true;
+                    nav.speed = Random.Range(2f, 6f) / 4f;
+                    nav.SetDestination(new Vector3(transform.position.x + Random.Range(-100f, 100f), transform.position.y, transform.position.z + Random.Range(-100f, 100f)));
+
+                }
             }
         }
         if (distanciaJugador > 25f) {
