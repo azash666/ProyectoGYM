@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour
     public static List<GameObject> muertos;
     public static List<GameObject> vivos;
     public static float numVivos = 15;
-    public static int numZombies = 1;
+    public static int numZombies = 15;
     public static GameObject zombie, vivo;
     public GameObject zombie2, vivo2;
     static GameObject player;
@@ -59,10 +59,9 @@ public class GameController : MonoBehaviour
             Ray rayo = new Ray(posicion, Vector3.down);
             if (Physics.Raycast(rayo, out hit))
             {
-                /*if (hit.rigidbody != null)
-                {*/
-                    posicion = hit.point;
-                //}
+                
+                posicion = hit.point;
+                
             }
             Debug.Log(posicion);
             nuevo = Object.Instantiate(zombie, posicion, Quaternion.identity);

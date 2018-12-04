@@ -15,8 +15,10 @@ public class PlayerHealth : MonoBehaviour
 
     Animator anim;                                              // Reference to the Animator component.
     AudioSource playerAudio;                                    // Reference to the AudioSource component.
-    PlayerMovement playerMovement;                              // Reference to the player's movement.
-    PlayerShooting playerShooting;                              // Reference to the PlayerShooting script.
+    //PlayerMovement playerMovement;                              // Reference to the player's movement.
+    //PlayerShooting playerShooting;                              // Reference to the PlayerShooting script.
+    //DANI:  ??? En vez de hacer eso, deberías llamar a una funcion (por ejemplo accionPrincipal()) de playerMovement.
+    //DANI:      Aunque no se qué tienen que ver el movimiento y el disparo (que realmente ambas podrian juntarse en uno solo) con la salud del pj.
     bool isDead;                                                // Whether the player is dead.
     bool damaged;                                               // True when the player gets damaged.
 
@@ -26,8 +28,8 @@ public class PlayerHealth : MonoBehaviour
         // Setting up the references.
         anim = GetComponent<Animator>();
         playerAudio = GetComponent<AudioSource>();
-        playerMovement = GetComponent<PlayerMovement>();
-        playerShooting = GetComponentInChildren<PlayerShooting>();
+        //playerMovement = GetComponent<PlayerMovement>();
+        //playerShooting = GetComponentInChildren<PlayerShooting>();
 
         // Set the initial health of the player.
         currentHealth = startingHealth;
@@ -83,7 +85,8 @@ public class PlayerHealth : MonoBehaviour
         isDead = true;
 
         // Turn off any remaining shooting effects.
-        playerShooting.DisableEffects();
+       // playerShooting.DisableEffects();
+       //DANI: En vez de esto, llama a una función "muere()" del script controlador del jugador. Alli dentro debería estar la animación de morir. 
 
         // Tell the animator that the player is dead.
         anim.SetTrigger("Die");
@@ -93,7 +96,8 @@ public class PlayerHealth : MonoBehaviour
         playerAudio.Play();
 
         // Turn off the movement and shooting scripts.
-        playerMovement.enabled = false;
-        playerShooting.enabled = false;
+        //playerMovement.enabled = false;
+        //playerShooting.enabled = false;
+        //DANI: Esto puede estar en la misma funcion muere() del controlador del jugador.
     }
 }
