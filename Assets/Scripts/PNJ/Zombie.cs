@@ -39,9 +39,9 @@ public class Zombie : MonoBehaviour {
                 if (!noEncontrado)
                 {
                     noEncontrado = true;
-                    nav.speed = Random.Range(2f, 6f) / 4f;
                     nav.SetDestination(new Vector3(transform.position.x + Random.Range(-100f, 100f), transform.position.y, transform.position.z + Random.Range(-100f, 100f)));
-
+                    nav.speed = Random.Range(2f, 6f) / 4f;
+                    
                 }
             }
         }
