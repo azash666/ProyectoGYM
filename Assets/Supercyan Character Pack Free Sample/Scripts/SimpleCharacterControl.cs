@@ -10,7 +10,7 @@ public class SimpleCharacterControl : MonoBehaviour {
     }
 
     [SerializeField] private float m_moveSpeed = 4;
-    [SerializeField] private float m_turnSpeed = 200;
+    // [SerializeField] private float m_turnSpeed = 3;
     [SerializeField] private float m_jumpForce = 4;
     [SerializeField] private Animator m_animator;
     [SerializeField] private Rigidbody m_rigidBody;
@@ -126,12 +126,17 @@ public class SimpleCharacterControl : MonoBehaviour {
         m_currentV = Mathf.Lerp(m_currentV, v, Time.deltaTime * m_interpolation);
         m_currentH = Mathf.Lerp(m_currentH, h, Time.deltaTime * m_interpolation);
 
-        transform.position += (transform.forward * m_currentV+ transform.right * m_currentH) * m_moveSpeed * Time.deltaTime;
-        //transform.Rotate(0, m_currentH * m_turnSpeed * Time.deltaTime, 0);
+        if (v == 0 || h == 0) {
+            transform.position += (transform.forward * m_currentV + transform.right * m_currentH) * m_moveSpeed * Time.deltaTime;
+        }
+        else {
+            transform.position += (transform.forward * m_currentV + transform.right * m_currentH) * m_moveSpeed * 0.5f * Time.deltaTime;
+        }
+        transform.Rotate(0, 3 * Input.GetAxis("Mouse X"), 0); // TODO: comprobar por que no funciona con la variable "m_turnSpeed" en vez de "3"
 
         m_animator.SetFloat("MoveSpeed", m_currentV);
 
-        JumpingAndLanding();
+        // JumpingAndLanding();
     }
 
     private void DirectUpdate()
@@ -166,7 +171,7 @@ public class SimpleCharacterControl : MonoBehaviour {
             m_animator.SetFloat("MoveSpeed", direction.magnitude);
         }
 
-        JumpingAndLanding();
+        // JumpingAndLanding();
     }
 
     private void JumpingAndLanding()
