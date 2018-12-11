@@ -153,12 +153,13 @@ public class GameController : MonoBehaviour
         else return muerto;
     }
 
-    public static void encuentro(GameObject vivo, GameObject muerto)
+    public static void encuentro(GameObject vivo, GameObject muerto, int probabilidad)
     {
         int prob = Random.Range(0, 100);
-        if (prob >= 80)
+        if (prob < probabilidad)
         {
             muerto.GetComponent<Zombie>().morir = true;
+            vivo.GetComponent<Vivo>().probabilidad += 5;
         }
         else
         {

@@ -11,12 +11,14 @@ public class Vivo : MonoBehaviour {
     bool noEncontrado;
     private NavMeshAgent nav;
     Vector3 posicionDestino;
+    public int probabilidad;
     // Use this for initialization
     void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
         nav = GetComponent<NavMeshAgent>();
         morir = false;
         convertir = false;
+        probabilidad = Random.Range(5, 20)+ Random.Range(5, 20);
     }
 	
 	// Update is called once per frame
@@ -73,8 +75,7 @@ public class Vivo : MonoBehaviour {
         
         if ((distancia=Vector3.Distance(posicionDestino, transform.position)) < 1 && destino!=gameObject)
         {
-            GameController.encuentro(gameObject, destino);
-            //convertir = true;
+            GameController.encuentro(gameObject, destino, probabilidad);
         }
         
     }

@@ -1262,7 +1262,7 @@ Animator:
   m_GameObject: {fileID: 1095354805022260}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 45d480461bbdc704587e117329ce8e69, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f297797635a2b7445ad2ea55cec7353b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1290,6 +1290,7 @@ MonoBehaviour:
   muertoz: {fileID: 1880907740956910, guid: 17141a9d29d4c4f45b53982ed2599e13, type: 2}
   morir: 0
   convertir: 0
+  probabilidad: 0
 --- !u!135 &135414679516812414
 SphereCollider:
   m_ObjectHideFlags: 1
