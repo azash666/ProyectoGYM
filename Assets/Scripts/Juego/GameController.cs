@@ -156,15 +156,13 @@ public class GameController : MonoBehaviour
     public static void encuentro(GameObject vivo, GameObject muerto)
     {
         int prob = Random.Range(0, 100);
-        if (prob >= 30)
+        if (prob >= 80)
         {
             muerto.GetComponent<Zombie>().morir = true;
         }
         else
         {
             vivo.GetComponent<Vivo>().convertir = true;
-            numVivos += 0.5f;
-            numZombies -= 1;
         }
     }
 
