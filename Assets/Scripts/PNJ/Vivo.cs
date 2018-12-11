@@ -73,7 +73,8 @@ public class Vivo : MonoBehaviour {
         
         if ((distancia=Vector3.Distance(posicionDestino, transform.position)) < 1 && destino!=gameObject)
         {
-            convertir = true;
+            GameController.encuentro(gameObject, destino);
+            //convertir = true;
         }
         
     }

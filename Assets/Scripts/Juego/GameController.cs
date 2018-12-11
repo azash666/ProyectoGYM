@@ -75,25 +75,35 @@ public class GameController : MonoBehaviour
         {
             int pos = Random.Range(0, 4);
             GameObject nuevo;
+            RaycastHit hit;
+            Vector3 posicion;
             switch (pos)
             {
                 case 0:
 
-                    nuevo = Object.Instantiate(vivo, new Vector3(player.transform.position.x + Random.Range(-25f, 25f), player.transform.position.y + 0, player.transform.position.z + 25f), Quaternion.identity);
+                    posicion = new Vector3(player.transform.position.x + Random.Range(-20f, 20f), player.transform.position.y + 20f, player.transform.position.z + 20f);
                     break;
                 case 1:
 
-                    nuevo = Object.Instantiate(vivo, new Vector3(player.transform.position.x + Random.Range(-25f, 25f), player.transform.position.y + 0, player.transform.position.z - 25f), Quaternion.identity);
+                    posicion = new Vector3(player.transform.position.x + Random.Range(-20f, 20f), player.transform.position.y + 20f, player.transform.position.z - 20f);
                     break;
                 case 2:
 
-                    nuevo = Object.Instantiate(vivo, new Vector3(player.transform.position.x + 25f, player.transform.position.y + 0, player.transform.position.z + Random.Range(-25f, 25f)), Quaternion.identity);
+                    posicion = new Vector3(player.transform.position.x + 20f, player.transform.position.y + 20f, player.transform.position.z + Random.Range(-20f, 20f));
                     break;
 
                 default:
-                    nuevo = Object.Instantiate(vivo, new Vector3(player.transform.position.x - 25f, player.transform.position.y + 0, player.transform.position.z + Random.Range(-25f, 25f)), Quaternion.identity);
+                    posicion = new Vector3(player.transform.position.x - 20f, player.transform.position.y + 20f, player.transform.position.z + Random.Range(-20f, 20f));
                     break;
             }
+            Ray rayo = new Ray(posicion, Vector3.down);
+            if (Physics.Raycast(rayo, out hit))
+            {
+
+                posicion = hit.point;
+
+            }
+            nuevo = Object.Instantiate(vivo, posicion, Quaternion.identity);
             vivos.Add(nuevo);
         }
     }
@@ -141,6 +151,21 @@ public class GameController : MonoBehaviour
         }
         if (distancia < 6f) return devolver;
         else return muerto;
+    }
+
+    public static void encuentro(GameObject vivo, GameObject muerto)
+    {
+        int prob = Random.Range(0, 100);
+        if (prob >= 30)
+        {
+            muerto.GetComponent<Zombie>().morir = true;
+        }
+        else
+        {
+            vivo.GetComponent<Vivo>().convertir = true;
+            numVivos += 0.5f;
+            numZombies -= 1;
+        }
     }
 
 

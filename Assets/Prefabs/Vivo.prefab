@@ -236,6 +236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4442573046156856}
   - component: {fileID: 137707457933551464}
+  - component: {fileID: 136476014229546436}
   m_Layer: 0
   m_Name: C_man_1_FBX2013
   m_TagString: Untagged
@@ -1104,7 +1105,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1095354805022260}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 111.29512, y: 0.05999653, z: -29.816504}
+  m_LocalPosition: {x: 76.630974, y: 0.05499834, z: -1.413374}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4484299788053878}
@@ -1301,6 +1302,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &136476014229546436
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1260444397566924}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.03
+  m_Height: 0.11
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0.05}
 --- !u!137 &137707457933551464
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
