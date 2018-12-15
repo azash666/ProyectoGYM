@@ -3,77 +3,67 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerHealth : MonoBehaviour
-{
-    public int startingHealth = 100;                            // The amount of health the player starts the game with.
-    public int currentHealth;                                   // The current health the player has.
-    public Slider healthSlider;                                 // Reference to the UI's health bar.
-    public Image damageImage;                                   // Reference to an image to flash on the screen on being hurt.
-    public AudioClip deathClip;                                 // The audio clip to play when the player dies.
-    public float flashSpeed = 5f;                               // The speed the damageImage will fade at.
-    public Color flashColour = new Color(1f, 0f, 0f, 0.1f);     // The colour the damageImage is set to, to flash.
+{   
+    // Vida del player, vida actual del player, referencia a la barra de vida
+    public int startingHealth = 10;                           
+    public int currentHealth;                                 
+    public Slider healthSlider;
+    public Image Fill;
 
+    // Imagen y audio cuando dañan al player
+    public Image damageImage;                                 
+    public AudioSource damageSound;
 
-    Animator anim;                                              // Reference to the Animator component.
-    AudioSource playerAudio;                                    // Reference to the AudioSource component.
-    //PlayerMovement playerMovement;                              // Reference to the player's movement.
-    //PlayerShooting playerShooting;                              // Reference to the PlayerShooting script.
-    //DANI:  ??? En vez de hacer eso, deberías llamar a una funcion (por ejemplo accionPrincipal()) de playerMovement.
-    //DANI:      Aunque no se qué tienen que ver el movimiento y el disparo (que realmente ambas podrian juntarse en uno solo) con la salud del pj.
-    bool isDead;                                                // Whether the player is dead.
-    bool damaged;                                               // True when the player gets damaged.
+    // Imagen y audio cuando muere el player
+    public Image deathImage;
+    public AudioSource deathSound;
+    
+    // Cuando el player muere
+    bool isDead;
+
+    private PlayerShooting playerShooting;
+    private SimpleCharacterControl playerMovement;
 
 
     void Awake()
     {
         // Setting up the references.
-        anim = GetComponent<Animator>();
-        playerAudio = GetComponent<AudioSource>();
-        //playerMovement = GetComponent<PlayerMovement>();
-        //playerShooting = GetComponentInChildren<PlayerShooting>();
 
         // Set the initial health of the player.
         currentHealth = startingHealth;
+
+        // Obtenemos los scripts
+        playerShooting = GameObject.Find("PlayerShooting").GetComponent<PlayerShooting>();
+        playerMovement = GameObject.Find("SimpleCharacterControl").GetComponent<SimpleCharacterControl>();
     }
 
 
-    void Update()
-    {
-        // If the player has just been damaged...
-        if (damaged)
-        {
-            // ... set the colour of the damageImage to the flash colour.
-            damageImage.color = flashColour;
-        }
-        // Otherwise...
-        else
-        {
-            // ... transition the colour back to clear.
-            damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
-        }
-
-        // Reset the damaged flag.
-        damaged = false;
-    }
-
-
+    // Cuando dañan al player
     public void TakeDamage(int amount)
     {
-        // Set the damaged flag so the screen will flash.
-        damaged = true;
-
-        // Reduce the current health by the damage amount.
+        // Reducimos la barra de vida del player
         currentHealth -= amount;
 
-        // Set the health bar's value to the current health.
+        // Ponemos la barra de vida con la vida actual
         healthSlider.value = currentHealth;
 
-        // Play the hurt sound effect.
-        playerAudio.Play();
+        // Reproducimos el sonido del daño recibido
+        damageSound.Play();
 
-        // If the player has lost all it's health and the death flag hasn't been set yet...
+        // Cambiar la vida de color
+        if (currentHealth < 7)
+        {
+            Fill.color = Color.yellow;
+        }
+
+        else if (currentHealth < 4)
+        {
+            Fill.color = Color.red;
+        }
+
+        // Si el player esta muerto
         if (currentHealth <= 0 && !isDead)
         {
-            // ... it should die.
             Death();
         }
     }
@@ -84,20 +74,11 @@ public class PlayerHealth : MonoBehaviour
         // Set the death flag so this function won't be called again.
         isDead = true;
 
-        // Turn off any remaining shooting effects.
-       // playerShooting.DisableEffects();
-       //DANI: En vez de esto, llama a una función "muere()" del script controlador del jugador. Alli dentro debería estar la animación de morir. 
+        // Reproducimos el sonido de la muerte
+        deathSound.Play();
 
-        // Tell the animator that the player is dead.
-        anim.SetTrigger("Die");
-
-        // Set the audiosource to play the death clip and play it (this will stop the hurt sound from playing).
-        playerAudio.clip = deathClip;
-        playerAudio.Play();
-
-        // Turn off the movement and shooting scripts.
-        //playerMovement.enabled = false;
-        //playerShooting.enabled = false;
-        //DANI: Esto puede estar en la misma funcion muere() del controlador del jugador.
+        // Deshabilitamos los scripts
+        playerMovement.enabled = false;
+        playerShooting.enabled = false;
     }
 }

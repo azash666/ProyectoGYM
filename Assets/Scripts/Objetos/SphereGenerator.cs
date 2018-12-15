@@ -10,7 +10,7 @@ public class SphereGenerator : MonoBehaviour {
 
     private void Start()
     {
-        sphereManager = GameObject.Find("borar").GetComponent<SphereManager>();
+        sphereManager = GameObject.Find("SphereManager").GetComponent<SphereManager>();
     }
 
     private void Update()
