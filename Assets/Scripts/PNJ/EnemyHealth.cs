@@ -18,6 +18,8 @@ public class EnemyHealth : MonoBehaviour
     bool isDead;                                // Whether the enemy is dead.
     bool isSinking;                             // Whether the enemy has started sinking through the floor.
 
+    ParticleSystem hitParticles;
+
 
     void Awake()
     {
