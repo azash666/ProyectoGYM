@@ -6,8 +6,8 @@ public class GameController : MonoBehaviour
 {
     public static List<GameObject> muertos;
     public static List<GameObject> vivos;
-    public static float numVivos = 15;
-    public static int numZombies = 15;
+    public static float numVivos = 10;
+    public static int numZombies = 10;
     public static GameObject zombie, vivo;
     public GameObject zombie2, vivo2;
     static GameObject player;
