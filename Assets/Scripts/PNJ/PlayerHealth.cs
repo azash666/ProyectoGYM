@@ -10,8 +10,7 @@ public class PlayerHealth : MonoBehaviour
     public Slider healthSlider;
     public Image Fill;
 
-    // Imagen y audio cuando dañan al player
-    public Image damageImage;                                 
+    // Audio cuando dañan al player                                 
     public AudioSource damageSound;
 
     // Imagen y audio cuando muere el player
@@ -21,7 +20,6 @@ public class PlayerHealth : MonoBehaviour
     // Cuando el player muere
     bool isDead;
 
-    private PlayerShooting playerShooting;
     private SimpleCharacterControl playerMovement;
 
 
@@ -33,7 +31,6 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = startingHealth;
 
         // Obtenemos los scripts
-        playerShooting = GameObject.Find("PlayerShooting").GetComponent<PlayerShooting>();
         playerMovement = GameObject.Find("SimpleCharacterControl").GetComponent<SimpleCharacterControl>();
     }
 
@@ -79,6 +76,6 @@ public class PlayerHealth : MonoBehaviour
 
         // Deshabilitamos los scripts
         playerMovement.enabled = false;
-        playerShooting.enabled = false;
+        //playerShooting.enabled = false;
     }
 }
