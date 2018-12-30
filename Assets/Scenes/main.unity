@@ -8304,6 +8304,7 @@ GameObject:
   - component: {fileID: 342432158}
   - component: {fileID: 342432157}
   - component: {fileID: 342432156}
+  - component: {fileID: 342432160}
   m_Layer: 0
   m_Name: SphereInmune
   m_TagString: Untagged
@@ -8319,7 +8320,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 772114029}
   m_GameObject: {fileID: 342432155}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.6
@@ -8382,6 +8383,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &342432160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342432155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4bf87979687e494db9f593d095503ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &343382516
 GameObject:
   m_ObjectHideFlags: 0
@@ -9310,6 +9322,7 @@ MonoBehaviour:
   damageSound: {fileID: 286585202}
   deathImage: {fileID: 0}
   deathSound: {fileID: 890158059}
+  isInmune: 0
 --- !u!222 &383017811
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11619,6 +11632,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a410c0ffeff755747a3f5a3c66343f14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  esferaInmune: {fileID: 0}
+  esferaVida: {fileID: 0}
+  esferaVelocidad: {fileID: 0}
   esferas: []
   player: {fileID: 0}
 --- !u!4 &472224037
@@ -18701,6 +18717,11 @@ Prefab:
         type: 2}
       propertyPath: m_Radius
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 135456234821909170, guid: dd225393f120d0843bcc3392522fe7cf,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114371795630725732, guid: dd225393f120d0843bcc3392522fe7cf, type: 2}
@@ -66598,6 +66619,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6508e579d147824d8eda647429ac7a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHealth: {fileID: 0}
+  restartDelay: 5
 --- !u!95 &1925889200
 Animator:
   serializedVersion: 3

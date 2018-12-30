@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class SphereManager : MonoBehaviour {
 
+    public GameObject esferaInmune;
+    public GameObject esferaVida;
+    public GameObject esferaVelocidad;
+
+
     public static readonly int numeroEsferas = 3;
 
     //Tipo de esferas

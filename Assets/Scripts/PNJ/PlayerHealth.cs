@@ -22,6 +22,8 @@ public class PlayerHealth : MonoBehaviour
 
     private SimpleCharacterControl playerMovement;
 
+    public bool isInmune = false;
+    float inmuneTimer = 0.0f;
 
     void Awake()
     {
@@ -32,6 +34,22 @@ public class PlayerHealth : MonoBehaviour
 
         // Obtenemos los scripts
         playerMovement = GameObject.Find("SimpleCharacterControl").GetComponent<SimpleCharacterControl>();
+    }
+
+    void Update()
+    {
+        
+        if (isInmune)
+        {
+            inmuneTimer += Time.deltaTime;
+
+            if (inmuneTimer == 5.0f)
+            {
+                isInmune = false;
+                inmuneTimer = 0.0f;
+            }
+        }
+
     }
 
 
