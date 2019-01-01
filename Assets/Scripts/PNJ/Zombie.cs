@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class Zombie : MonoBehaviour {
+    public Animator animator;
     GameObject player;
     private NavMeshAgent nav;
     bool noEncontrado;
@@ -14,6 +15,7 @@ public class Zombie : MonoBehaviour {
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
         nav = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
         morir = false;
     }
 	
@@ -33,6 +35,7 @@ public class Zombie : MonoBehaviour {
                 nav.SetDestination(destino.transform.position);
                 noEncontrado = false;
                 nav.speed = Random.Range(10f, 14f) / 4f;
+                animator.SetFloat("MoveSpeed", nav.speed);
             }
             else
             {
@@ -41,7 +44,7 @@ public class Zombie : MonoBehaviour {
                     nav.SetDestination(new Vector3(transform.position.x + Random.Range(-100f, 100f), transform.position.y, transform.position.z + Random.Range(-100f, 100f)));
                     noEncontrado = true;
                     nav.speed = Random.Range(2f, 6f) / 4f;
-                    
+                    animator.SetFloat("MoveSpeed", nav.speed);
                 }
             }
         }

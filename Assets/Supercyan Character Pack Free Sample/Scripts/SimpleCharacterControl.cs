@@ -3,12 +3,6 @@ using System.Collections.Generic;
 
 public class SimpleCharacterControl : MonoBehaviour {
 
-    private enum ControlMode
-    {
-        Tank,
-        Direct
-    }
-
     [SerializeField] private float m_moveSpeed = 4;
     // [SerializeField] private float m_turnSpeed = 3;
     [SerializeField] private float m_jumpForce = 4;
@@ -152,30 +146,6 @@ public class SimpleCharacterControl : MonoBehaviour {
         }
         transform.Rotate(0, 3 * Input.GetAxis("Mouse X"), 0); // TODO: comprobar por que no funciona con la variable "m_turnSpeed" en vez de "3"
 
-
-        // JumpingAndLanding();
-
         m_wasGrounded = m_isGrounded;
-    }
-
-    private void JumpingAndLanding()
-    {
-        bool jumpCooldownOver = (Time.time - m_jumpTimeStamp) >= m_minJumpInterval;
-
-        if (jumpCooldownOver && m_isGrounded && Input.GetKey(KeyCode.Space))
-        {
-            m_jumpTimeStamp = Time.time;
-            m_rigidBody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
-        }
-
-        if (!m_wasGrounded && m_isGrounded)
-        {
-            m_animator.SetTrigger("Land");
-        }
-
-        if (!m_isGrounded && m_wasGrounded)
-        {
-            m_animator.SetTrigger("Jump");
-        }
     }
 }

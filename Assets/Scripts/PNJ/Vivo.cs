@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class Vivo : MonoBehaviour {
+    public Animator animator;
     public float distanciaJugador, distancia;
     public GameObject player, aux, destino;
     public GameObject muertoz;
@@ -16,13 +17,15 @@ public class Vivo : MonoBehaviour {
     void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
         nav = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
         morir = false;
         convertir = false;
         probabilidad = Random.Range(5, 20)+ Random.Range(5, 20);
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+
+    // Update is called once per frame
+    void Update ()
     {
         setDestino(GameController.muertoMasCercano(gameObject));
         if (convertir)
@@ -56,6 +59,7 @@ public class Vivo : MonoBehaviour {
                     ));
                 noEncontrado = false;
                 nav.speed = Random.Range(12f, 16f) / 4f;
+                animator.SetFloat("MoveSpeed", nav.speed);
             }
             else
             {
@@ -64,7 +68,7 @@ public class Vivo : MonoBehaviour {
                     noEncontrado = true;
                     nav.SetDestination(new Vector3(transform.position.x + Random.Range(-100f, 100f), transform.position.y, transform.position.z + Random.Range(-100f, 100f)));
                     nav.speed = Random.Range(8f, 12f) / 4f;
-
+                    animator.SetFloat("MoveSpeed", nav.speed);
                 }
             }
         }
@@ -77,7 +81,6 @@ public class Vivo : MonoBehaviour {
         {
             GameController.encuentro(gameObject, destino, probabilidad);
         }
-        
     }
 
     public void setDestino(GameObject destino)

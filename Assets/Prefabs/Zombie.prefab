@@ -999,7 +999,7 @@ Animator:
   m_GameObject: {fileID: 1880907740956910}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c929656c07909194ab8a5cd79f5f371d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 62bf34be8e543c740a9488a959798b4f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1037,6 +1037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf88e84fe6045064db45ef03761c8aae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   morir: 0
   distancia: 0
   distanciaJugador: 0
