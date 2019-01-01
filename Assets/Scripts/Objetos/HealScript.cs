@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InmuneScript : MonoBehaviour {
+public class HealScript : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Entorno")
         {
-            SphereManager.tocaAmbiente(0);
+            SphereManager.tocaAmbiente(1);
             Destroy(this.gameObject);
         }
 
         if (other.tag == "Player")
         {
-            other.GetComponent<PlayerHealth>().isInmune = true;
-            SphereManager.numEsferas[0] = 0;
+            other.GetComponent<PlayerHealth>().isHeal = true;
+            SphereManager.numEsferas[1] = 0;
             Destroy(this.gameObject);
         }
     }

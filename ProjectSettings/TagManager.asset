@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SphereManager
   - HealthUI
+  - Entorno
   layers:
   - Default
   - TransparentFX

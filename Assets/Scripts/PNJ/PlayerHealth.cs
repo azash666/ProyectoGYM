@@ -25,6 +25,8 @@ public class PlayerHealth : MonoBehaviour
     public bool isInmune = false;
     float inmuneTimer = 0.0f;
 
+    public bool isHeal = false;
+
     void Awake()
     {
         // Setting up the references.
@@ -50,36 +52,60 @@ public class PlayerHealth : MonoBehaviour
             }
         }
 
-    }
+        if (isHeal)
+        {
+            currentHealth += 3;
+            isHeal = false;
 
+            // Cambiar la vida de color
+            if (currentHealth < 7)
+            {
+                Fill.color = Color.yellow;
+            }
+
+            else if (currentHealth < 4)
+            {
+                Fill.color = Color.red;
+            }
+
+            else
+            {
+                Fill.color = Color.green;
+            }
+        }
+
+    }
 
     // Cuando dañan al player
     public void TakeDamage(int amount)
     {
-        // Reducimos la barra de vida del player
-        currentHealth -= amount;
-
-        // Ponemos la barra de vida con la vida actual
-        healthSlider.value = currentHealth;
-
-        // Reproducimos el sonido del daño recibido
-        damageSound.Play();
-
-        // Cambiar la vida de color
-        if (currentHealth < 7)
+        if (! isInmune)
         {
-            Fill.color = Color.yellow;
-        }
+            // Reducimos la barra de vida del player
+            currentHealth -= amount;
 
-        else if (currentHealth < 4)
-        {
-            Fill.color = Color.red;
-        }
+            // Ponemos la barra de vida con la vida actual
+            healthSlider.value = currentHealth;
 
-        // Si el player esta muerto
-        if (currentHealth <= 0 && !isDead)
-        {
-            Death();
+            // Reproducimos el sonido del daño recibido
+            damageSound.Play();
+
+            // Cambiar la vida de color
+            if (currentHealth < 7)
+            {
+                Fill.color = Color.yellow;
+            }
+
+            else if (currentHealth < 4)
+            {
+                Fill.color = Color.red;
+            }
+
+            // Si el player esta muerto
+            if (currentHealth <= 0 && !isDead)
+            {
+                Death();
+            }
         }
     }
 

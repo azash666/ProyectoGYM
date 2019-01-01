@@ -32,6 +32,10 @@ public class SimpleCharacterControl : MonoBehaviour {
     private bool m_isGrounded;
     private List<Collider> m_collisions = new List<Collider>();
 
+    //Aumentar la velocidad
+    public bool isSpeed = false;
+    float speedTimer = 0.0f;
+
     private void OnCollisionEnter(Collision collision)
     {
         ContactPoint[] contactPoints = collision.contacts;
@@ -86,6 +90,22 @@ public class SimpleCharacterControl : MonoBehaviour {
     }
 
 	void Update () {
+
+        if (isSpeed)
+        {
+            speedTimer += Time.deltaTime;
+            m_moveSpeed = 6;
+
+            if (speedTimer == 5.0f)
+            {
+                isSpeed = false;
+                speedTimer = 0.0f;
+                m_moveSpeed = 4;
+            }
+        }
+
+
+
         m_animator.SetBool("Grounded", m_isGrounded);
 
         float v = Input.GetAxis("Vertical");

@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class SphereManager : MonoBehaviour {
 
-    public GameObject esferaInmune;
-    public GameObject esferaVida;
-    public GameObject esferaVelocidad;
-
-
-    public static readonly int numeroEsferas = 3;
+    public static GameObject esferaInmune;
+    public static GameObject esferaVida;
+    public static GameObject esferaVelocidad;
 
     //Tipo de esferas
-    public GameObject[] esferas;
-    public GameObject player;
-    
-    //Vector del número de esferas
-    int[] numeroObjects = new int[numeroEsferas];
+    public static GameObject[] tipoEsferas = { esferaInmune, esferaVida, esferaVelocidad };
+    public static GameObject player;
 
-    float time = 60.0f;
+    //Número de esferas
+    static int numeroEsferas = 3;
+
+    //Vector del número de esferas
+    public static int[] numEsferas = new int[numeroEsferas];
+
+    float time = 20.0f;
 	
     // Use this for initialization
 	void Start () {
@@ -32,48 +32,43 @@ public class SphereManager : MonoBehaviour {
     void SpawnSphere()
     {
         //Numero random para hacer spawn de una esfera aleatoria
-        int numero = Random.Range(0, numeroEsferas - 1);
+        int numero = Random.Range(0, tipoEsferas.Length);
 
         //Si no hay esfera spawneada de ese tipo
-        if (numeroObjects[numero] == 0)
+        if (numEsferas[numero] == 0)
         {
 
             //Obtenemos la posición del player y hacemos spawn dependiendo de su posición
             float xPlayer = player.transform.position.x;
             float zPlayer = player.transform.position.z;
 
-            float x = Random.Range(xPlayer -30.0f, xPlayer + 30.0f);
+            float x = Random.Range(xPlayer -10.0f, xPlayer + 10.0f);
             float y = 1.0f;
-            float minZ = zPlayer - (30 - Mathf.Abs(x)) * -1;
-            float maxZ = zPlayer + 30 - Mathf.Abs(x);
+            float minZ = zPlayer - (10 - Mathf.Abs(x)) * -1;
+            float maxZ = zPlayer + 10 - Mathf.Abs(x);
 
             float z = Random.Range(minZ, maxZ);
 
-            //Instantiate(esferas[numero], new Vector3(x, y, z), new Quaternion());
-            numeroObjects[numero] = 1;
+            Instantiate(tipoEsferas[numero], new Vector3(x, y, z), new Quaternion());
+            numEsferas[numero] = 1;
         }
   
     }
 
     //Si la esfera toca el ambiente la vuelvo hacer respawn
-    public void tocaAmbiente(int cual)
+    public static void tocaAmbiente(int cual)
     {
         //Obtenemos la posición del player y hacemos spawn dependiendo de su posición
         float xPlayer = player.transform.position.x;
         float zPlayer = player.transform.position.z;
 
-        float x = Random.Range(xPlayer - 30.0f, xPlayer + 30.0f);
+        float x = Random.Range(xPlayer - 10.0f, xPlayer + 10.0f);
         float y = 1.0f;
-        float minZ = zPlayer - (30 - Mathf.Abs(x)) * -1;
-        float maxZ = zPlayer + 30 - Mathf.Abs(x);
+        float minZ = zPlayer - (10 - Mathf.Abs(x)) * -1;
+        float maxZ = zPlayer + 10 - Mathf.Abs(x);
 
         float z = Random.Range(minZ, maxZ);
 
-        Instantiate(esferas[cual], new Vector3(x, y, z), new Quaternion());
-    }
-
-    public void esferaDestruida(int cual)
-    {
-        numeroObjects[cual]--;
+        Instantiate(tipoEsferas[cual], new Vector3(x, y, z), new Quaternion());
     }
 }
