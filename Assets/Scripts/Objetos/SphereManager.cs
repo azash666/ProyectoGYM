@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class SphereManager : MonoBehaviour {
 
-    public static GameObject esferaInmune;
-    public static GameObject esferaVida;
-    public static GameObject esferaVelocidad;
+    public GameObject esferaInmune;
+    public GameObject esferaVida;
+    public GameObject esferaVelocidad;
 
     //Tipo de esferas
-    public static GameObject[] tipoEsferas = { esferaInmune, esferaVida, esferaVelocidad };
-    public static GameObject player;
+    public GameObject[] tipoEsferas;
+    public GameObject player;
 
     //Número de esferas
     static int numeroEsferas = 3;
 
     //Vector del número de esferas
-    public static int[] numEsferas = new int[numeroEsferas];
+    public int[] numEsferas;
 
     float time = 20.0f;
 	
@@ -26,6 +26,12 @@ public class SphereManager : MonoBehaviour {
         //Ejecutamos la función repetidamente cada cierto tiempo
         InvokeRepeating("SpawnSphere", time, time);
         player = GameObject.FindGameObjectWithTag("Player");
+        tipoEsferas[0] = esferaInmune;
+        tipoEsferas[1] = esferaVida;
+        tipoEsferas[2] = esferaVelocidad;
+        numEsferas[0] = 0;
+        numEsferas[1] = 0;
+        numEsferas[2] = 0;
     }
 
     //Función que hace spawn de las esferas aleatoriamente
@@ -56,7 +62,7 @@ public class SphereManager : MonoBehaviour {
     }
 
     //Si la esfera toca el ambiente la vuelvo hacer respawn
-    public static void tocaAmbiente(int cual)
+    public void tocaAmbiente(int cual)
     {
         //Obtenemos la posición del player y hacemos spawn dependiendo de su posición
         float xPlayer = player.transform.position.x;

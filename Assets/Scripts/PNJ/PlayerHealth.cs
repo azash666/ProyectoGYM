@@ -13,34 +13,29 @@ public class PlayerHealth : MonoBehaviour
     // Audio cuando dañan al player                                 
     public AudioSource damageSound;
 
-    // Imagen y audio cuando muere el player
-    public Image deathImage;
+    // Audio cuando muere el player
     public AudioSource deathSound;
     
     // Cuando el player muere
-    bool isDead;
-
-    private SimpleCharacterControl playerMovement;
+    public Animator animDead;
+    bool isDead = false;
 
     public bool isInmune = false;
     float inmuneTimer = 0.0f;
 
     public bool isHeal = false;
 
-    void Awake()
+    void Start()
     {
         // Setting up the references.
 
         // Set the initial health of the player.
         currentHealth = startingHealth;
-
-        // Obtenemos los scripts
-        playerMovement = GameObject.Find("SimpleCharacterControl").GetComponent<SimpleCharacterControl>();
     }
 
     void Update()
     {
-        
+      
         if (isInmune)
         {
             inmuneTimer += Time.deltaTime;
@@ -81,6 +76,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (! isInmune)
         {
+            print("me han hecho daño");
             // Reducimos la barra de vida del player
             currentHealth -= amount;
 
@@ -117,9 +113,5 @@ public class PlayerHealth : MonoBehaviour
 
         // Reproducimos el sonido de la muerte
         deathSound.Play();
-
-        // Deshabilitamos los scripts
-        playerMovement.enabled = false;
-        //playerShooting.enabled = false;
     }
 }

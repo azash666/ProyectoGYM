@@ -8,14 +8,14 @@ public class HealScript : MonoBehaviour {
     {
         if (other.tag == "Entorno")
         {
-            SphereManager.tocaAmbiente(1);
+            //SphereManager.tocaAmbiente(1);
             Destroy(this.gameObject);
         }
 
         if (other.tag == "Player")
         {
             other.GetComponent<PlayerHealth>().isHeal = true;
-            SphereManager.numEsferas[1] = 0;
+            //SphereManager.numEsferas[1] = 0;
             Destroy(this.gameObject);
         }
     }

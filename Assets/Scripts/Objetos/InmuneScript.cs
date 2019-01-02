@@ -8,14 +8,14 @@ public class InmuneScript : MonoBehaviour {
     {
         if (other.tag == "Entorno")
         {
-            SphereManager.tocaAmbiente(0);
+            //SphereManager.tocaAmbiente(0);
             Destroy(this.gameObject);
         }
 
         if (other.tag == "Player")
         {
             other.GetComponent<PlayerHealth>().isInmune = true;
-            SphereManager.numEsferas[0] = 0;
+            //SphereManager.numEsferas[0] = 0;
             Destroy(this.gameObject);
         }
     }

@@ -8,14 +8,14 @@ public class SpeedScript : MonoBehaviour {
     {
         if (other.tag == "Entorno")
         {
-            SphereManager.tocaAmbiente(2);
+            //SphereManager.tocaAmbiente(2);
             Destroy(this.gameObject);
         }
 
         if (other.tag == "Player")
         {
             other.GetComponent<SimpleCharacterControl>().isSpeed = true;
-            SphereManager.numEsferas[2] = 0;
+            //SphereManager.numEsferas[2] = 0;
             Destroy(this.gameObject);
         }
     }
