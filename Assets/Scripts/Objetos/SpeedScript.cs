@@ -4,18 +4,27 @@ using UnityEngine;
 
 public class SpeedScript : MonoBehaviour {
 
+    SphereManager sm;
+    
+
+    public void Awake()
+    {
+        sm = GameObject.Find("SphereManager").GetComponent<SphereManager>();
+        
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Entorno")
         {
-            //SphereManager.tocaAmbiente(2);
+            sm.tocaAmbiente(2);
             Destroy(this.gameObject);
         }
 
         if (other.tag == "Player")
         {
             other.GetComponent<SimpleCharacterControl>().isSpeed = true;
-            //SphereManager.numEsferas[2] = 0;
+            sm.numEsferas[2] = 0;
             Destroy(this.gameObject);
         }
     }

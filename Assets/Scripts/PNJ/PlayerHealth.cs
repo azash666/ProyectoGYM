@@ -15,6 +15,7 @@ public class PlayerHealth : MonoBehaviour
 
     // Audio cuando muere el player
     public AudioSource deathSound;
+    public GameObject deathImage;
     
     // Cuando el player muere
     public Animator animDead;
@@ -53,7 +54,7 @@ public class PlayerHealth : MonoBehaviour
             isHeal = false;
 
             // Cambiar la vida de color
-            if (currentHealth < 7)
+            if (currentHealth < 7 && currentHealth >= 4)
             {
                 Fill.color = Color.yellow;
             }
@@ -76,7 +77,6 @@ public class PlayerHealth : MonoBehaviour
     {
         if (! isInmune)
         {
-            print("me han hecho daño");
             // Reducimos la barra de vida del player
             currentHealth -= amount;
 
@@ -87,7 +87,7 @@ public class PlayerHealth : MonoBehaviour
             damageSound.Play();
 
             // Cambiar la vida de color
-            if (currentHealth < 7)
+            if (currentHealth < 7 && currentHealth >= 4)
             {
                 Fill.color = Color.yellow;
             }
@@ -110,6 +110,7 @@ public class PlayerHealth : MonoBehaviour
     {
         // Set the death flag so this function won't be called again.
         isDead = true;
+        deathImage.SetActive(true);
 
         // Reproducimos el sonido de la muerte
         deathSound.Play();

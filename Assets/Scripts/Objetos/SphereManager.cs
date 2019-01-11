@@ -9,16 +9,13 @@ public class SphereManager : MonoBehaviour {
     public GameObject esferaVelocidad;
 
     //Tipo de esferas
-    public GameObject[] tipoEsferas;
-    public GameObject player;
-
-    //Número de esferas
-    static int numeroEsferas = 3;
+    private GameObject[] tipoEsferas = new GameObject[3];
+    private GameObject player;
 
     //Vector del número de esferas
-    public int[] numEsferas;
+    public int[] numEsferas = new int[3];
 
-    float time = 20.0f;
+    float time = 1.0f;
 	
     // Use this for initialization
 	void Start () {
@@ -49,11 +46,8 @@ public class SphereManager : MonoBehaviour {
             float zPlayer = player.transform.position.z;
 
             float x = Random.Range(xPlayer -10.0f, xPlayer + 10.0f);
-            float y = 1.0f;
-            float minZ = zPlayer - (10 - Mathf.Abs(x)) * -1;
-            float maxZ = zPlayer + 10 - Mathf.Abs(x);
-
-            float z = Random.Range(minZ, maxZ);
+            float y = 0.8f;
+            float z = Random.Range(zPlayer - 10.0f, zPlayer + 10.0f);
 
             Instantiate(tipoEsferas[numero], new Vector3(x, y, z), new Quaternion());
             numEsferas[numero] = 1;
@@ -69,11 +63,8 @@ public class SphereManager : MonoBehaviour {
         float zPlayer = player.transform.position.z;
 
         float x = Random.Range(xPlayer - 10.0f, xPlayer + 10.0f);
-        float y = 1.0f;
-        float minZ = zPlayer - (10 - Mathf.Abs(x)) * -1;
-        float maxZ = zPlayer + 10 - Mathf.Abs(x);
-
-        float z = Random.Range(minZ, maxZ);
+        float y = 0.8f;
+        float z = Random.Range(zPlayer - 10.0f, zPlayer + 10.0f);
 
         Instantiate(tipoEsferas[cual], new Vector3(x, y, z), new Quaternion());
     }
