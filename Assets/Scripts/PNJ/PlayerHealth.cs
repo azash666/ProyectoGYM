@@ -13,18 +13,25 @@ public class PlayerHealth : MonoBehaviour
     // Audio cuando dañan al player                                 
     public AudioSource damageSound;
 
-    // Audio cuando muere el player
+    // Audio e imagen de muerte del player
     public AudioSource deathSound;
-    public GameObject deathImage;
+    public RawImage imagenMuerte;
     
     // Cuando el player muere
     public Animator animDead;
     bool isDead = false;
 
+    //Inmunidad
     public bool isInmune = false;
     float inmuneTimer = 0.0f;
+    public RawImage imagenInmunidad;
 
+    //Vida
     public bool isHeal = false;
+    public RawImage imagenVida;
+    float healTimer = 0.0f;
+
+    
 
     void Start()
     {
@@ -32,6 +39,10 @@ public class PlayerHealth : MonoBehaviour
 
         // Set the initial health of the player.
         currentHealth = startingHealth;
+        //imagenInmunidad = GameObject.Find("ImagenInmunidad").GetComponent<RawImage>();
+        imagenInmunidad.enabled = false;
+        imagenVida.enabled = false;
+        imagenMuerte.enabled = false;
     }
 
     void Update()
@@ -40,17 +51,31 @@ public class PlayerHealth : MonoBehaviour
         if (isInmune)
         {
             inmuneTimer += Time.deltaTime;
+            imagenInmunidad.enabled = true;
 
-            if (inmuneTimer == 5.0f)
+            if (inmuneTimer >= 5.0f && inmuneTimer <= 6.0f)
             {
                 isInmune = false;
                 inmuneTimer = 0.0f;
+                imagenInmunidad.enabled = false;
             }
         }
 
         if (isHeal)
         {
-            currentHealth += 3;
+
+            if (currentHealth <= 7)
+            {
+                currentHealth += 3;
+            }
+
+            else
+            {
+                currentHealth = 10;
+            }
+
+            healthSlider.value = currentHealth;
+
             isHeal = false;
 
             // Cambiar la vida de color
@@ -67,6 +92,15 @@ public class PlayerHealth : MonoBehaviour
             else
             {
                 Fill.color = Color.green;
+            }
+
+            healTimer += Time.deltaTime;
+            imagenVida.enabled = true;
+
+            if (healTimer >= 2.0f && healTimer <= 3.0f)
+            {
+                healTimer = 0.0f;
+                imagenInmunidad.enabled = false;
             }
         }
 
@@ -110,7 +144,7 @@ public class PlayerHealth : MonoBehaviour
     {
         // Set the death flag so this function won't be called again.
         isDead = true;
-        deathImage.SetActive(true);
+        imagenMuerte.enabled = true;
 
         // Reproducimos el sonido de la muerte
         deathSound.Play();

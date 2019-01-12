@@ -5,12 +5,10 @@ using UnityEngine;
 public class HealScript : MonoBehaviour {
 
     SphereManager sm;
-    PlayerHealth heal;
 
     public void Awake()
     {
         sm = GameObject.Find("SphereManager").GetComponent<SphereManager>();
-        heal = GameObject.Find("Player").GetComponent<PlayerHealth>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -23,7 +21,7 @@ public class HealScript : MonoBehaviour {
 
         if (other.tag == "Player")
         {
-            heal.isHeal = true;
+            other.GetComponent<PlayerHealth>().isHeal = true;
             sm.numEsferas[1] = 0;
             Destroy(this.gameObject);
         }

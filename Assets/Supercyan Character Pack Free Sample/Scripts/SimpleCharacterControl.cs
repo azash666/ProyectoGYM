@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class SimpleCharacterControl : MonoBehaviour {
 
@@ -29,6 +30,13 @@ public class SimpleCharacterControl : MonoBehaviour {
     //Aumentar la velocidad
     public bool isSpeed = false;
     float speedTimer = 0.0f;
+    public RawImage imagenVelocidad;
+
+
+    void Start()
+    {
+        imagenVelocidad.enabled = false;
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -88,13 +96,15 @@ public class SimpleCharacterControl : MonoBehaviour {
         if (isSpeed)
         {
             speedTimer += Time.deltaTime;
-            m_moveSpeed = 6;
+            m_moveSpeed = 7;
+            imagenVelocidad.enabled = true;
 
-            if (speedTimer == 5.0f)
+            if (speedTimer >= 5.0f && speedTimer <= 6.0f)
             {
                 isSpeed = false;
                 speedTimer = 0.0f;
                 m_moveSpeed = 4;
+                imagenVelocidad.enabled = false;
             }
         }
 

@@ -4,7 +4,7 @@ using System.Collections;
 
 public class EnemyAttack : MonoBehaviour
 {
-    public float timeBetweenAttacks = 0.5f;     // The time in seconds between each attack.
+    public float timeBetweenAttacks = 0.8f;     // The time in seconds between each attack.
     public int attackDamage = 1;               // The amount of health taken away per attack.
 
     GameObject player;                          // Reference to the player GameObject.
@@ -52,7 +52,6 @@ public class EnemyAttack : MonoBehaviour
         if (timer >= timeBetweenAttacks && playerInRange)
         {
             // ... attack.
-            print("ataco");
             Attack();
         }
     }
@@ -67,7 +66,6 @@ public class EnemyAttack : MonoBehaviour
         if (playerHealth.currentHealth > 0)
         {
             // ... damage the player.
-            print("estoy atacando");
             playerHealth.TakeDamage(attackDamage);
         }
     }

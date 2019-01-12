@@ -63,7 +63,7 @@ public class GameController : MonoBehaviour
                 posicion = hit.point;
                 
             }
-            Debug.Log(posicion);
+            //Debug.Log(posicion);
             nuevo = Object.Instantiate(zombie, posicion, Quaternion.identity);
             muertos.Add(nuevo);
         }
