@@ -18,7 +18,6 @@ public class PlayerHealth : MonoBehaviour
     public RawImage imagenMuerte;
     
     // Cuando el player muere
-    public Animator animDead;
     bool isDead = false;
 
     //Inmunidad
@@ -76,8 +75,6 @@ public class PlayerHealth : MonoBehaviour
 
             healthSlider.value = currentHealth;
 
-            isHeal = false;
-
             // Cambiar la vida de color
             if (currentHealth < 7 && currentHealth >= 4)
             {
@@ -100,8 +97,11 @@ public class PlayerHealth : MonoBehaviour
             if (healTimer >= 2.0f && healTimer <= 3.0f)
             {
                 healTimer = 0.0f;
-                imagenInmunidad.enabled = false;
+                imagenVida.enabled = false;
+                isHeal = false;
             }
+
+            
         }
 
     }
@@ -148,5 +148,8 @@ public class PlayerHealth : MonoBehaviour
 
         // Reproducimos el sonido de la muerte
         deathSound.Play();
+
+        //GameController.numVivos = 10;
+        //GameController.numZombies = 10;
     }
 }

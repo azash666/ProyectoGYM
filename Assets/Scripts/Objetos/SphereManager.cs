@@ -15,7 +15,7 @@ public class SphereManager : MonoBehaviour {
     //Vector del número de esferas
     public int[] numEsferas = new int[3];
 
-    float time = 1.0f;
+    float time = 10.0f;
 	
     // Use this for initialization
 	void Start () {
