@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SimpleCharacterControl : MonoBehaviour {
 
     [SerializeField] private float m_moveSpeed = 4;
-    // [SerializeField] private float m_turnSpeed = 3;
     [SerializeField] private float m_jumpForce = 4;
     [SerializeField] private Animator m_animator;
     [SerializeField] private Rigidbody m_rigidBody;
@@ -93,6 +93,11 @@ public class SimpleCharacterControl : MonoBehaviour {
 
 	void Update () {
 
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("menu");
+        }
+
         if (isSpeed)
         {
             speedTimer += Time.deltaTime;
@@ -154,7 +159,7 @@ public class SimpleCharacterControl : MonoBehaviour {
                 m_animator.SetFloat("MoveSpeed", (Mathf.Abs(m_currentV) + Mathf.Abs(m_currentH)) * -1);
             }
         }
-        transform.Rotate(0, 3 * Input.GetAxis("Mouse X"), 0); // TODO: comprobar por que no funciona con la variable "m_turnSpeed" en vez de "3"
+        transform.Rotate(0, 3 * Input.GetAxis("Mouse X"), 0);
 
         m_wasGrounded = m_isGrounded;
     }
