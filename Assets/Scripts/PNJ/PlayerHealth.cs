@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {   
@@ -115,7 +116,7 @@ public class PlayerHealth : MonoBehaviour
             currentHealth -= amount;
 
             // Ponemos la barra de vida con la vida actual
-            healthSlider.value = currentHealth;
+            healthSlider.value = currentHealth>0?currentHealth:0;
 
             // Reproducimos el sonido del daño recibido
             damageSound.Play();
@@ -143,13 +144,20 @@ public class PlayerHealth : MonoBehaviour
     void Death()
     {
         // Set the death flag so this function won't be called again.
+        GameController.numVivos = 10;
+        GameController.numZombies = 10;
         isDead = true;
         imagenMuerte.enabled = true;
 
         // Reproducimos el sonido de la muerte
         deathSound.Play();
+        StartCoroutine(LoadLevelAfterDelay(5));
+    }
 
-        //GameController.numVivos = 10;
-        //GameController.numZombies = 10;
+    IEnumerator LoadLevelAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene("main");
     }
 }
+

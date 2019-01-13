@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour {
 
     public void PlayGame() {
+        GameController.numVivos = 10;
+        GameController.numZombies = 10;
         SceneManager.LoadScene("main");
     }
 
