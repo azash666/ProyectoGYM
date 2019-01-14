@@ -33,35 +33,39 @@ public class GameController : MonoBehaviour
     {
         if (muertos.Count < numZombies)
         {
-            int pos = Random.Range(0, 4);
+            bool repetir = true;
             GameObject nuevo;
             RaycastHit hit;
-            Vector3 posicion;
-            switch (pos)
+            Vector3 posicion = new Vector3(0,0,0);
+            while (repetir)
             {
-                case 0:
+                int pos = Random.Range(0, 4);
+                switch (pos)
+                {
+                    case 0:
 
-                    posicion = new Vector3(player.transform.position.x + Random.Range(-20f, 20f), player.transform.position.y+20f, player.transform.position.z + 20f);
-                    break;
-                case 1:
+                        posicion = new Vector3(player.transform.position.x + Random.Range(-20f, 20f), player.transform.position.y + 20f, player.transform.position.z + 20f);
+                        break;
+                    case 1:
 
-                    posicion = new Vector3(player.transform.position.x + Random.Range(-20f, 20f), player.transform.position.y + 20f, player.transform.position.z - 20f);
-                    break;
-                case 2:
+                        posicion = new Vector3(player.transform.position.x + Random.Range(-20f, 20f), player.transform.position.y + 20f, player.transform.position.z - 20f);
+                        break;
+                    case 2:
 
-                    posicion = new Vector3(player.transform.position.x + 20f, player.transform.position.y + 20f, player.transform.position.z + Random.Range(-20f, 20f));
-                    break;
+                        posicion = new Vector3(player.transform.position.x + 20f, player.transform.position.y + 20f, player.transform.position.z + Random.Range(-20f, 20f));
+                        break;
 
-                default:
-                    posicion = new Vector3(player.transform.position.x - 20f, player.transform.position.y + 20f, player.transform.position.z + Random.Range(-20f, 20f));
-                    break;
-            }
-            Ray rayo = new Ray(posicion, Vector3.down);
-            if (Physics.Raycast(rayo, out hit))
-            {
-                
-                posicion = hit.point;
-                
+                    default:
+                        posicion = new Vector3(player.transform.position.x - 20f, player.transform.position.y + 20f, player.transform.position.z + Random.Range(-20f, 20f));
+                        break;
+                }
+                Ray rayo = new Ray(posicion, Vector3.down);
+                if (Physics.Raycast(rayo, out hit) && hit.transform.tag == "Entorno")
+                {
+
+                    posicion = hit.point;
+                    repetir = false;
+                }
             }
             nuevo = Object.Instantiate(zombie, posicion, Quaternion.identity);
             muertos.Add(nuevo);
@@ -72,35 +76,39 @@ public class GameController : MonoBehaviour
     {
         if (vivos.Count < numVivos)
         {
-            int pos = Random.Range(0, 4);
             GameObject nuevo;
             RaycastHit hit;
-            Vector3 posicion;
-            switch (pos)
+            Vector3 posicion = new Vector3(0,0,0);
+            bool repetir = true;
+            while (repetir)
             {
-                case 0:
+                int pos = Random.Range(0, 4);
+                switch (pos)
+                {
+                    case 0:
 
-                    posicion = new Vector3(player.transform.position.x + Random.Range(-20f, 20f), player.transform.position.y + 20f, player.transform.position.z + 20f);
-                    break;
-                case 1:
+                        posicion = new Vector3(player.transform.position.x + Random.Range(-20f, 20f), player.transform.position.y + 20f, player.transform.position.z + 20f);
+                        break;
+                    case 1:
 
-                    posicion = new Vector3(player.transform.position.x + Random.Range(-20f, 20f), player.transform.position.y + 20f, player.transform.position.z - 20f);
-                    break;
-                case 2:
+                        posicion = new Vector3(player.transform.position.x + Random.Range(-20f, 20f), player.transform.position.y + 20f, player.transform.position.z - 20f);
+                        break;
+                    case 2:
 
-                    posicion = new Vector3(player.transform.position.x + 20f, player.transform.position.y + 20f, player.transform.position.z + Random.Range(-20f, 20f));
-                    break;
+                        posicion = new Vector3(player.transform.position.x + 20f, player.transform.position.y + 20f, player.transform.position.z + Random.Range(-20f, 20f));
+                        break;
 
-                default:
-                    posicion = new Vector3(player.transform.position.x - 20f, player.transform.position.y + 20f, player.transform.position.z + Random.Range(-20f, 20f));
-                    break;
-            }
-            Ray rayo = new Ray(posicion, Vector3.down);
-            if (Physics.Raycast(rayo, out hit))
-            {
+                    default:
+                        posicion = new Vector3(player.transform.position.x - 20f, player.transform.position.y + 20f, player.transform.position.z + Random.Range(-20f, 20f));
+                        break;
+                }
+                Ray rayo = new Ray(posicion, Vector3.down);
+                if (Physics.Raycast(rayo, out hit) && hit.transform.tag == "Entorno")
+                {
 
-                posicion = hit.point;
-
+                    posicion = hit.point;
+                    repetir = false;
+                }
             }
             nuevo = Object.Instantiate(vivo, posicion, Quaternion.identity);
             vivos.Add(nuevo);
